@@ -1,0 +1,41 @@
+.prise {
+    padding-top: 60px;
+    display: none;
+
+    &__wrapper {
+        padding-left: 75px;
+        padding-right: 51px;
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: 341px 341px;
+        justify-content: space-between;
+        row-gap: 15px;
+        .prise__item {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            &-title {
+
+                position: relative;
+                @include before_circle;
+                    &:before {
+                        width: 15px;
+                        height: 15px;
+                        top: 2px;
+                        left: -25px;
+ 
+                    }
+            }
+            &-sell {
+                grid-column: 2 / 3;
+            }
+            &-subtitle {
+                grid-column: 1 / 3;
+                grid-row: 2 / 3;
+                margin-top: 5px;
+            }
+        }
+
+    }
+
+}

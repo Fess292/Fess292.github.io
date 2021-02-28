@@ -1,0 +1,49 @@
+.reasons {
+    min-height: 470px;
+    padding: 70px 0 95px 0;
+    background-color: #f6f6f6;
+
+    &__blocks {
+        margin-top: 65px;
+        display: flex;
+        .reasons__block {
+            width: 239px;
+            margin-right: 98px;
+            &_img {
+                animation-name: heartbeat;
+                animation-duration: 2s;
+                animation-timing-function: ease;
+                animation-iteration-count: infinite;
+                &:hover {
+                    animation-play-state: paused;
+                }
+            }
+
+            img {
+                width: 70px;
+                display: block;
+                margin: 0 auto;
+            }
+            h4 {
+                margin-top: 38px;
+                font-size: 18px;
+                font-weight: bold;
+                text-align: center;
+                color: #0d0d0d;
+            }
+            .reasons__subscrime {
+                margin-top: 26px;
+                font-size: 14px;
+                font-weight: 300;
+                text-align: center;
+                color: #0d0d0d;
+                span {
+                    color: #ff0000;
+                    text-transform: uppercase;
+                }
+              }
+    }
+    }
+
+
+}
