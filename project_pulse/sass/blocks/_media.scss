@@ -1,0 +1,40 @@
+@media (max-width: 1200px){
+    .promo {
+        width: 100%;
+        padding: 21px 20px 93px 20px;
+    }
+    .reasons {
+        &__blocks {
+            justify-content: center;
+            width: 100%;
+            .reasons__block {
+            margin-right: 20px;
+            }
+        }
+    }
+    .consultation {
+        .container {
+        padding-left: 48px;
+        }
+    }
+
+    .catalog-item {
+        margin: 0 auto;
+    }
+    }
+@media (max-width: 767px){
+    .promo {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+    .reasons {
+        margin: 0 auto;
+        &__blocks {
+            width: 100%;
+            .reasons__block {
+            margin-right: 16px;
+            }
+        }
+    }
+}
+

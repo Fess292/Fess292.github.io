@@ -1,0 +1,47 @@
+.feed {
+    padding-bottom: 71px;
+    &__items {
+        &:first-child {
+            margin-top: 70px;
+        }
+    }
+    &__item {
+        margin-top: 100px;
+        display: flex;
+        &:nth-child(1) {
+            margin-top: 70px;
+        }
+        }
+        img {
+            width: 169px;
+            height: 169px;
+            margin-right: 62px;
+        }
+        .feed-list {
+            h4 {
+                font-size: 18px;
+                font-weight: bold;
+                text-align: left;
+                color: #0d0d0d;
+            }
+            h5 {
+                margin-top: 10px;
+                font-size: 14px;
+                font-weight: 300;
+                text-align: left;
+                color: #646464;
+            }
+            &__descr, &__subdescr, &__footer {
+                margin-top: 19px;
+                font-size: 16px;
+                font-weight: 300;
+                text-align: left;
+                color: #0d0d0d;
+                span {
+                    line-height: 55px;
+                }
+            }
+        }
+    }
+    
+    
