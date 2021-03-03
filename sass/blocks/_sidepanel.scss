@@ -23,15 +23,18 @@
         }
     }
     &__link {
-        &:hover {
-            svg path {
-                fill: #FFA501;
-           
+        path{
+            &:hover {
+            fill: $main-color;
+        }
+    }
+        svg {
+            transform: rotate(-90deg);
             
-            }
+    }
             
         }
 
-    }
+    
    
 }

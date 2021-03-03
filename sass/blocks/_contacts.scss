@@ -31,8 +31,17 @@
         a {
             margin-right: 25px;
             img {
+            rotate: -45deg;
             max-height: 30px;
             max-width: 30px;
+            border-radius: 15px;
+            }
+        }
+        .drive2 {
+            img {
+                filter: grayscale(100%); 
+                
+                
             }
         }
     }
