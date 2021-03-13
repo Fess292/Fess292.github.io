@@ -18,7 +18,7 @@
         padding: 60px 10px 0 10px;
         display: grid;
         grid-template-columns: 270px 270px 270px 270px;
-        grid-template-rows: 270px 270px;
+        grid-template-rows: auto auto;
         gap: 13px;
         &-item {
             border: 1px solid #000;
@@ -26,6 +26,8 @@
             padding-right: 29px;
             img {
                 padding-top: 30px;
+                max-height: 95px;
+                
             }
             h4 {
                 padding-top: 20px;

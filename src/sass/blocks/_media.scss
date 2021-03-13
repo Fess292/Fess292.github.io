@@ -98,8 +98,9 @@
     .work {
         &__wrapper {
             padding-left: 0;
+            padding-right: 0;
             grid-template-columns: repeat(auto-fit, 270px);
-            justify-content: space-between;
+            justify-content:space-around;
             grid-template-rows: auto auto;
             &-item {
                 grid-template-columns: repeat(auto-fit, 270px);
