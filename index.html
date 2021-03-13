@@ -74,12 +74,12 @@
             </div>
             <nav>
                 <ul class="menu__list">
-                    <li class="menu__link"><a href="#">ПРО МЕНЯ</a></li>
-                    <li class="menu__link"><a href="#">МОЙ ОПЫТ</a></li>
-                    <li class="menu__link"><a href="#">МОИ НАВЫКИ</a></li>
-                    <li class="menu__link"><a href="#">МОИ РАБОТЫ</a></li>
-                    <li class="menu__link"><a href="#">ПРАЙС-ЛИСТ</a></li>
-                    <li class="menu__link"><a href="#">КОНТАКТЫ</a></li>
+                    <li class="menu__link"><a href="#about">ПРО МЕНЯ</a></li>
+                    <li class="menu__link"><a href="#resume">МОЙ ОПЫТ</a></li>
+                    <li class="menu__link"><a href="#work">МОИ НАВЫКИ</a></li>
+                    <li class="menu__link"><a href="#portfolio">МОИ РАБОТЫ</a></li>
+                    <!-- <li class="menu__link"><a href="#">ПРАЙС-ЛИСТ</a></li> -->
+                    <li class="menu__link"><a href="#contacts">КОНТАКТЫ</a></li>
                 </ul>
             </nav>
 
@@ -111,7 +111,7 @@
         </div>
         <div class="container">
             <div class="title title_fz16 promo__subtitle">Меня зовут Паршин Павел</div>
-            <h1 class="title title_fz48 promo__title">Я  начинающий web-разработчик 
+            <h1 class="title title_fz48 promo__title">Я  web-разработчик 
                 <br>
                 из города Воронеж</h1>
                 <div class="promo__btns">
@@ -176,7 +176,7 @@
         </div>
     </section>
 
-    <section class="resume"> 
+    <section id="resume" class="resume"> 
         <div class="container">
             <h2 class="title title_fz16 resume__title">Опыт</h2>
             <div class="title resume__subtitle">Чем я буду полезен</div>
@@ -227,6 +227,7 @@
                                         <li>Udemy, HTML5, CSS3, FlexBox верстка сайтов с нуля.</li>
                                         <li>Софтлайн Эдьюкейшн, Введение в веб-разработку на языке JavaScript.</li>
                                         <li>Beonmax, Курс ВЕБ-разработчик 2021 - с нуля до результата.</li>
+                                        <li>Beonmax, Посадка верстки и создание тем на CMS WordPress.</li>
                                     </ul>
                                 </div>
                             </div>
@@ -285,7 +286,7 @@
         </div>
     </section>
 
-    <section class="work">
+    <section id="work" class="work">
         <div class="container">
             <h2 class="title title_fz16 work__title">Навыки</h2>
             <div class="title work__subtitle">Что я использую в работе</div>
@@ -314,17 +315,22 @@
                 <div class="work__wrapper-item React">
                     <img src="icons/skills/react.svg" alt="React">
                     <h4 class="title title_fz14b">React</h4>
-                    <p class="title title_fz12">Эта библиотека позволяет создавать web-приложения. Мы можем создать максимально интерактивный продукт именно под ваши цели</p>
+                    <p class="title title_fz12">Эта библиотека позволяет создавать web-приложения. Мы можем создать максимально интерактивный продукт именно под ваши цели.</p>
                 </div>
                 <div class="work__wrapper-item ">
                     <img src="icons/skills/node.js.svg" alt="Node.js">
-                    <h4 class="title title_fz14b">Node.js</h4>
-                    <p class="title title_fz12">Эта платформа позволяет создавать бэкенд для вашего продукта - “мозги”, которые будут выполнять действия, которые пользователь не видит</p>
+                    <h4 class="title title_fz14b">Npm</h4>
+                    <p class="title title_fz12">Менеджер пакетов, автоматически устанавливающийся вместе с Node.js. Он используется для скачивания пакетов из облачного сервера npm.</p>
                 </div>
-                <div class="work__wrapper-item mongo">
-                    <img src="icons/skills/mongo.db.svg" alt="Mongo.db">
-                    <h4 class="title title_fz14b">Mongo.db</h4>
-                    <p class="title title_fz12">Это нереляционная база данных, которая будет хранить данные вашего сайта или приложения</p>
+                <div class="work__wrapper-item">
+                    <img src="icons/skills/bootstrap2.svg" alt="bootstrap">
+                    <h4 class="title title_fz14b">Bootstrap</h4>
+                    <p class="title title_fz12">Быстрое создание и настройка адаптивных сайтов с помощью Bootstrap, - включающего переменные Sass и миксины, адаптивную систему сеток и множество готовых компонентов и плагинов JavaScript.</p>
+                </div>
+                <div class="work__wrapper-item">
+                    <img src="icons/skills/wordpress.svg" alt="wordpress">
+                    <h4 class="title title_fz14b">Wordpress</h4>
+                    <p class="title title_fz12">Система управления содержимым сайта с открытым исходным кодом. Встроенная система «тем» и «плагинов» вместе с удачной архитектурой позволяет конструировать проекты широкой функциональной сложности.</p>
                 </div>
             </div>
             <div class="work__skills">
@@ -395,7 +401,7 @@
         </div>
     </section>
 
-     <section class="prise"> 
+     <section id="prise" class="prise"> 
         <div class="container">
             <h2 class="title title_fz16 portfolio__title">Прайс-лист</h2>
             <div class="devider"></div>
@@ -434,7 +440,7 @@
         </div>
     </section>  
 
-    <section class="contacts"> 
+    <section id="contacts" class="contacts"> 
         <div class="container">
             <div class="contacts__wrapper">
                 <div class="contacts__photo">
