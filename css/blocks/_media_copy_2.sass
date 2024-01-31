@@ -1,0 +1,361 @@
+@media screen and (min-width: 360px) and (max-width: 414px)
+    .container
+        width: 360px
+    .footer__tel
+        width: 150px
+@media screen and (min-width: 1230px)
+
+    .container
+        width: 1194px
+        padding: 0
+    .header
+        .header__logo-ico
+            display: none
+
+    .patterns-web
+        display: block
+        &__grid
+            display: grid
+            grid-template-columns: repeat(7, 78.684px)
+            grid-template-rows: repeat(8, 78.684px)
+            column-gap: 7.87px
+            row-gap: 7.87px
+            svg
+                max-width: 100%
+                max-height: 100%
+            .pattern
+                opacity: 0
+                transition: opacity 0.15s
+                &.visible
+                    opacity: 1
+            .line1-3,.line1-5,.line1-7,.line2-1,.line2-4,.line2-6,.line3-2,.line3-7,.line4-1,.line4-2,.line4-3,.line4-4,.line4-6,.line5-1,.line5-3,.line5-5,.line5-6,.line5-7,.line6-2,.line6-3,.line6-4,.line6-5,.line7-2,.line7-6,.line7-7,.line8-1,.line8-4,.line8-5
+                opacity: 0
+
+    .page-promo, .page-contacts
+
+        display: grid
+        grid-template-columns: repeat(2, 50%)
+        grid-template-rows: auto
+        .patterns-mob
+            display: none
+        .container
+            max-width: 100%
+        .left
+            grid-column: 1/2
+            grid-row: 1/2
+            padding-left: 40px
+        .right
+            grid-column: 2/3
+            grid-row: 1/2
+            margin-top: -21px
+    .page-promo
+        padding-top: 20px
+        .right
+            margin-left: -1px
+        .patterns-web
+            &__grid
+                svg
+                    fill: $b
+        .promo
+            margin-top: 62px
+            width: 412px
+            &__descr
+                margin-top: 12px
+            &__list li:first-child
+                margin-right: 93px
+        .footer
+            margin-top: 86px
+            .container
+                grid-template-columns: repeat(2, auto)
+                grid-template-rows: auto
+                column-gap: 0
+                row-gap: 0
+            &__adress
+                display: flex
+                align-items: center
+                grid-column: 1/2
+                grid-row: 1/2
+                width: 270px
+                p
+                    width: 170px
+            &__tel
+                grid-column: 2/3
+                grid-row: 1/2
+                margin-left: -51px
+            &__mail
+                grid-column: 3/4
+                grid-row: 1/2
+                margin-right: 33px
+            .header__logo-ico
+                display: block
+                inline-size: 45.101px
+                aspect-ratio: 1
+                margin-right: 19.9px
+                margin-top: -6px
+                z-index: 1000
+                position: relative
+                svg
+                    position: absolute
+                    max-width: 100%
+                    max-height: 100%
+                .logo-svg
+                    opacity: 0
+                    transition: opacity 0s ease-in-out
+                .logo-svg.active
+                    opacity: 1
+
+    .page-promo, .page-contacts
+        width: 1194px
+        margin: 0 auto
+        .header__logo-text
+            width: 70px
+            height: 45.35px
+        .header__logo-ico
+            display: none
+
+    .page-contacts
+        display: grid
+        padding-top: 26px
+        padding-bottom: 0
+        .patterns-web
+            &__grid
+                svg
+                    fill: $w
+        .right
+            grid-column: 2/3
+            grid-row: 1/2
+            margin-left: 2px
+            margin-top: -17px
+        .info
+            margin-top: 16.85px
+            width: 412px
+        .button
+            display: none
+        .footer
+            padding-bottom: 0
+            .container
+                grid-template-columns: repeat(2, auto)
+                grid-template-rows: auto
+                column-gap: 10px
+                row-gap: 0
+                padding-right: 75px
+            &__adress
+                display: flex
+                align-items: center
+                grid-column: 1/2
+                grid-row: 1/2
+                width: 134px
+                margin-right: 55px
+            &__tel
+                grid-column: 2/3
+                grid-row: 1/2
+                margin-left: -62px
+            &__mail
+                grid-column: 3/4
+                grid-row: 1/2
+                margin-right: 11px
+        .map
+            margin-top: 47px
+            margin-left: -40px
+            width: 589px
+            height: 362px
+            background-image: url('../img/map-m.jpg')
+            // transform-style: preserve-3d
+            svg
+                top: 202px
+                left: 278px
+            .header__logo-ico
+                display: block
+                position: relative
+                z-index: 100
+                // transform-style: preserve-3d
+                // transform: translateZ(100px)
+                inline-size: 45.1px
+                aspect-ratio: 1
+                // bottom: 49.9px
+                // left: 50px
+                bottom: -75.1px
+                left: -237px
+                margin: 0
+                svg
+                    display: block
+                    max-width: 100%
+                    max-height: 100%
+
+@media screen and (min-width: 1600px)
+    .page-promo, .page-contacts
+        width: 100%
+        width: 100vw
+        height: 100vh
+        max-width: 1900px
+        padding-left: 49px
+    .patterns-web
+        &__grid
+            grid-template-columns: repeat(7, 112.64px)
+            grid-template-rows: repeat(8, 112.64px)
+            column-gap: 11.26px
+            row-gap: 11.26px
+    .page-promo
+        .left
+            padding-left: 0
+        .right
+            margin-left: 127px
+            margin-top: -27px
+        .promo
+            width: 762px
+            margin-top: -16px
+            h1
+                font-size: 46px
+                line-height: 52px
+                margin-top: 147.89px
+            &__descr
+                margin-top: 19px
+                font-size: 20px
+                line-height: 28px
+                width: 604px
+            .button
+                margin-top: 33px
+                .button-content
+                    font-size: 18px
+                    line-height: 28px
+                .arrow
+                    display: none
+                .mouse
+                    display: block
+                    width: 15px
+                    height: 29.81px
+                    z-index: 100
+                    svg
+                        max-width: 100%
+                        max-height: 100%
+                &:hover
+                    svg
+                        fill: #fff
+            &__list
+                margin-top: 93px
+                li
+                    font-size: 20px
+                    line-height: 28px
+                    width: 343px
+                    &:first-child
+                        margin-right: 45px
+        .footer
+            margin-top: 169px
+            padding-bottom: 43px
+            div,a
+                font-size: 15px
+                // line-height: 20
+            &__adress
+                width: 280px
+                p
+                    width: 200px
+            .header__logo-ico
+                margin-right: 32.5px
+                margin-top: -1px
+
+            &__tel
+                margin-left: 70px
+                line-height: 20px
+            &__mail
+                position: relative
+                right: -122px
+                line-height: 20px
+    .button
+        height: 55px
+        &--toContacts
+            width: 355px
+            padding: 0 24.9px 0 38px
+            &::before
+                right: 60px
+
+    .page-contacts
+        z-index: 100
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            top: 0
+            bottom: 0
+            width: 100vw
+            left: 50%
+            transform: translateX(-50%)
+            background: #000
+            z-index: -100
+        .left
+            padding-top: 14px
+            padding-left: 0
+        .right
+            margin-left: 123px
+            margin-top: -19px
+        .info
+            margin-top: 43.89px
+            width: 762px
+            &__title
+                font-size: 46px
+                line-height: 52px
+            &__descr
+                margin-top: 15px
+                width: 715px
+                font-size: 20px
+                line-height: 28px
+        .footer
+            margin-top: 47px
+            div,a
+                font-size: 16px
+                line-height: 22px
+            &__tel
+                margin-left: 66px
+                width: 160px
+            &__mail
+                position: relative
+                left: 97px
+        .map
+            margin-top: 41px
+            margin-left: -49px
+            width: 940px
+            height: 591px
+            background-image: url('../img/map-w.jpg')
+            // transform-style: preserve-3d
+            svg
+                top: 309px
+                left: 454px
+            .header__logo-ico
+                bottom: -188.1px
+                left: -406px
+    .height
+        display: -webkit-box
+        display: -moz-box
+        display: -ms-flexbox
+        display: -webkit-flex
+        display: flex
+        -webkit-box-align: center
+        -webkit-align-items: center
+        -moz-box-align: center
+        -ms-flex-align: center
+        align-items: center
+        width: 100%
+        -webkit-box-pack: center
+        -moz-box-pack: center
+        -ms-flex-pack: center
+        -webkit-justify-content: center
+        justify-content: center
+        min-height:100% !important
+        min-height:100vh !important
+
+
+        
+    /* white background on the last section*/
+    #grid
+        background-color: #fff
+        position: relative
+
+    .bg-white
+        background-color: #ffffff
+
+    
+
+@media screen and (min-width: 1700px)
+    .page-contacts
+        .footer__adress
+            width: 235px
+            margin-right: 25px

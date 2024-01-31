@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Textile King</title>
+  <link href="img/Favicon.png" rel="shortcut icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,600&display=swap"
+    rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+  <!-- <script src="https://api-maps.yandex.ru/v3/?apikey=c72cc6f9-889b-4073-bdde-3c3a8d2715f8&lang=ru_RU"></script> -->
+  
+  <!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9adbca7b42f31ecd53b46701ffb2b38e8cf9d5fde80ed89cae832834377323a7&amp;width=940&amp;height=591&amp;lang=ru_RU&amp;scroll=true"></script> -->
+  <script type="text/javascript" src="https://dadbab.info/content/shared/js/jquery-1.12.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="wrapper container-fluid" id="pinn">
+    <section id="page-promo" class="page-promo layer">
+      <div class="left">
+        <header id="header--promo" class="header header--promo">
+          <div class="container">
+            <div class="header__logo-text">
+              <svg>
+                <use xlink:href="#logo-text"></use>
+              </svg>
+            </div>
+            <div class="header__logo-ico">
+              <svg>
+                <use xlink:href="#logo-5"></use>
+              </svg>
+            </div>
+          </div>
+        </header>
+
+        <div class="patterns-mob patterns-mob--top">
+          <div class="container">
+            <div class="patterns-mob__grid" id="patternsGrid">
+              <div class="pattern line1-1 column-1">
+                <svg>
+                  <use xlink:href="#pattern-line1-1"></use>
+                </svg>
+              </div>
+              <div class="pattern line1-2 column-2">
+                <svg>
+                  <use xlink:href="#pattern-line1-2"></use>
+                </svg>
+              </div>
+              <div class="pattern line1-3 column-3">
+                <svg>
+                  <use xlink:href="#pattern-line1-3"></use>
+                </svg>
+              </div>
+              <div class="pattern line1-4 column-4">
+                <svg>
+                  <use xlink:href="#pattern-line1-4"></use>
+                </svg>
+              </div>
+              <div class="pattern line1-5 column-5">
+                <svg>
+                  <use xlink:href="#pattern-line3-1"></use>
+                </svg>
+              </div>
+              <div class="pattern line1-6 column-6">
+                <svg>
+                  <use xlink:href="#pattern-line3-3"></use>
+                </svg>
+              </div>
+              <div class="pattern line2-1 column-1">
+                <svg>
+                  <use xlink:href="#pattern-line2-1"></use>
+                </svg>
+              </div>
+              <div class="pattern line2-2 column-2">
+                <svg>
+                  <use xlink:href="#pattern-line2-2"></use>
+                </svg>
+              </div>
+              <div class="pattern line2-3 column-3">
+                <svg>
+                  <use xlink:href="#pattern-line2-3"></use>
+                </svg>
+              </div>
+              <div class="pattern line2-4 column-4">
+                <svg>
+                  <use xlink:href="#pattern-line2-4"></use>
+                </svg>
+              </div>
+              <div class="pattern line2-5 column-5">
+                <svg>
+                  <use xlink:href="#pattern-line3-2"></use>
+                </svg>
+              </div>
+              <div class="pattern line2-6 column-6">
+                <svg>
+                  <use xlink:href="#pattern-line3-4"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <article class="promo">
+          <div class="container">
+            <h1>
+              Оптовая торговля тканями премиум класса напрямую <br> от производителей
+            </h1>
+            <p class="promo__descr">
+              Наша компания занимается прямыми поставками в Россию тканей премиального качества напрямую от
+              производителей по всему миру
+            </p>
+            <button class="button button--toContacts" onclick="showContacts()">
+              <span class="button-content">
+                Контактная информация
+              </span>
+              <svg class="arrow">
+                <use xlink:href="#arrow"></use>
+              </svg>
+              <svg class="mouse">
+                <use xlink:href="#mouse-scroll"></use>
+              </svg>
+            </button>
+            <ul class="promo__list">
+              <li>
+                Ткани напрямую от мировых производителей
+              </li>
+              <li>
+                Эксклюзивное представительство ведущих фабрик
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <div class="patterns-mob patterns-mob--bottom">
+          <div class="container">
+            <div class="patterns-mob__grid" id="patternsGrid-2">
+              <div class="pattern line1-1 column-1">
+                <svg>
+                  <use xlink:href="#pattern-line1-1"></use>
+                </svg>
+              </div>
+              <div class="pattern line1-2 column-2">
+                <svg>
+                  <use xlink:href="#pattern-line1-2"></use>
+                </svg>
+              </div>
+              <div class="pattern line1-3 column-3">
+                <svg>
+                  <use xlink:href="#pattern-line1-3"></use>
+                </svg>
+              </div>
+              <div class="pattern line1-4 column-4">
+                <svg>
+                  <use xlink:href="#pattern-line1-4"></use>
+                </svg>
+              </div>
+              <div class="pattern line1-5 column-5">
+                <svg>
+                  <use xlink:href="#pattern-line3-1"></use>
+                </svg>
+              </div>
+              <div class="pattern line1-6 column-6">
+                <svg>
+                  <use xlink:href="#pattern-line3-3"></use>
+                </svg>
+              </div>
+              <div class="pattern line2-1 column-1">
+                <svg>
+                  <use xlink:href="#pattern-line2-1"></use>
+                </svg>
+              </div>
+              <div class="pattern line2-2 column-2">
+                <svg>
+                  <use xlink:href="#pattern-line2-2"></use>
+                </svg>
+              </div>
+              <div class="pattern line2-3 column-3">
+                <svg>
+                  <use xlink:href="#pattern-line2-3"></use>
+                </svg>
+              </div>
+              <div class="pattern line2-4 column-4">
+                <svg>
+                  <use xlink:href="#pattern-line2-4"></use>
+                </svg>
+              </div>
+              <div class="pattern line2-5 column-5">
+                <svg>
+                  <use xlink:href="#pattern-line3-2"></use>
+                </svg>
+              </div>
+              <div class="pattern line2-6 column-6">
+                <svg>
+                  <use xlink:href="#pattern-line3-4"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <div class="container">
+            <div class="footer__adress">
+              <div class="header__logo-ico">
+                <svg id="logo-6"  class="logo-svg">
+                  <use xlink:href="#logo6"></use>
+                </svg>
+                <svg id="logo-5" class="active logo-svg">
+                  <use xlink:href="#logo5"></use>
+                </svg>
+                <svg id="logo-4"  class="logo-svg">
+                  <use xlink:href="#logo4"></use>
+                </svg>
+                <svg id="logo-3" class="logo-svg">
+                  <use xlink:href="#logo3"></use>
+                </svg>
+                <svg id="logo-2" class="logo-svg">
+                  <use xlink:href="#logo2"></use>
+                </svg>
+                <svg id="logo-1" class="logo-svg">
+                  <use xlink:href="#logo1"></use>
+                </svg>
+              </div>
+              <p>
+                Istambul Evliya Celebi Mah.Sadi Konuralp Cad.Iksv Vakfi Blok No:&nbsp;5/2&nbsp;Beyoglu
+              </p>
+            </div>
+            <div class="footer__tel">
+              <p>Телефон</p>
+              <a href="tel:+905535135128">
+                +90 (553) 513 51 28
+              </a>
+            </div>
+            <div class="footer__mail">
+              <p>
+                Электронная почта
+              </p>
+              <a href="mailto:expo@gastellocars.com">
+                expo@gastellocars.com
+              </a>
+            </div>
+          </div>
+        </footer>
+      </div>
+      <div class="right">
+        <div class="patterns-web">
+          <div class="container">
+            <div class="patterns-web__grid" id="patternsGridWeb1">
+              <div class="line1-1 pattern column-1">
+                <svg>
+                  <use xlink:href="#pattern-line1-1"></use>
+                </svg>
+              </div>
+              <div class="line1-2 pattern column-2">
+                <svg>
+                  <use xlink:href="#pattern-line1-2"></use>
+                </svg>
+              </div>
+              <div class="line1-3 pattern column-3">
+                <svg>
+                  <use xlink:href="#pattern-line1-3"></use>
+                </svg>
+              </div>
+              <div class="line1-4 pattern column-4">
+                <svg>
+                  <use xlink:href="#pattern-line1-4"></use>
+                </svg>
+              </div>
+              <div class="line1-5 pattern column-5">
+                <svg>
+                  <use xlink:href="#pattern-line1-1"></use>
+                </svg>
+              </div>
+              <div class="line1-6 pattern column-6">
+                <svg>
+                  <use xlink:href="#pattern-line1-2"></use>
+                </svg>
+              </div>
+              <div class="line1-7 pattern column-7">
+                <svg>
+                  <use xlink:href="#pattern-line1-3"></use>
+                </svg>
+              </div>
+              <div class="line1-8 pattern column-8">
+                <svg>
+                  <use xlink:href="#pattern-line1-4"></use>
+                </svg>
+              </div>
+              <div class="line2-1 pattern column-1">
+                <svg>
+                  <use xlink:href="#pattern-line2-1"></use>
+                </svg>
+              </div>
+              <div class="line2-2 pattern column-2">
+                <svg>
+                  <use xlink:href="#pattern-line2-2"></use>
+                </svg>
+              </div>
+              <div class="line2-3 pattern column-3">
+                <svg>
+                  <use xlink:href="#pattern-line2-3"></use>
+                </svg>
+              </div>
+              <div class="line2-4 pattern column-4">
+                <svg>
+                  <use xlink:href="#pattern-line2-4"></use>
+                </svg>
+              </div>
+              <div class="line2-5 pattern column-5">
+                <svg>
+                  <use xlink:href="#pattern-line2-1"></use>
+                </svg>
+              </div>
+              <div class="line2-6 pattern column-6">
+                <svg>
+                  <use xlink:href="#pattern-line2-2"></use>
+                </svg>
+              </div>
+              <div class="line2-7 pattern column-7">
+                <svg>
+                  <use xlink:href="#pattern-line2-3"></use>
+                </svg>
+              </div>
+              <div class="line2-8 pattern column-8">
+                <svg>
+                  <use xlink:href="#pattern-line2-1"></use>
+                </svg>
+              </div>
+              <div class="line3-1 pattern column-1">
+                <svg>
+                  <use xlink:href="#pattern-line3-1"></use>
+                </svg>
+              </div>
+              <div class="line3-2 pattern column-2">
+                <svg>
+                  <use xlink:href="#pattern-line3-2"></use>
+                </svg>
+              </div>
+              <div class="line3-3 pattern column-3">
+                <svg>
+                  <use xlink:href="#pattern-line3-3"></use>
+                </svg>
+              </div>
+              <div class="line3-4 pattern column-4">
+                <svg>
+                  <use xlink:href="#pattern-line3-4"></use>
+                </svg>
+              </div>
+              <div class="line3-5 pattern column-5">
+                <svg>
+                  <use xlink:href="#pattern-line3-1"></use>
+                </svg>
+              </div>
+              <div class="line3-6 pattern column-6">
+                <svg>
+                  <use xlink:href="#pattern-line3-2"></use>
+                </svg>
+              </div>
+              <div class="line3-7 pattern column-7">
+                <svg>
+                  <use xlink:href="#pattern-line3-3"></use>
+                </svg>
+              </div>
+              <div class="line3-8 pattern column-8">
+                <svg>
+                  <use xlink:href="#pattern-line3-4"></use>
+                </svg>
+              </div>
+
+              <div class="line4-1 pattern column-1">
+                <svg>
+                  <use xlink:href="#pattern-line1-1"></use>
+                </svg>
+              </div>
+              <div class="line4-2 pattern column-2">
+                <svg>
+                  <use xlink:href="#pattern-line1-2"></use>
+                </svg>
+              </div>
+              <div class="line4-3 pattern column-3">
+                <svg>
+                  <use xlink:href="#pattern-line1-3"></use>
+                </svg>
+              </div>
+              <div class="line4-4 pattern column-4">
+                <svg>
+                  <use xlink:href="#pattern-line1-4"></use>
+                </svg>
+              </div>
+              <div class="line4-5 pattern column-5">
+                <svg>
+                  <use xlink:href="#pattern-line1-1"></use>
+                </svg>
+              </div>
+              <div class="line4-6 pattern column-6">
+                <svg>
+                  <use xlink:href="#pattern-line1-2"></use>
+                </svg>
+              </div>
+              <div class="line4-7 pattern column-7">
+                <svg>
+                  <use xlink:href="#pattern-line1-3"></use>
+                </svg>
+              </div>
+              <div class="line4-8 pattern column-8">
+                <svg>
+                  <use xlink:href="#pattern-line1-4"></use>
+                </svg>
+              </div>
+              <div class="line5-1 pattern column-1">
+                <svg>
+                  <use xlink:href="#pattern-line2-1"></use>
+                </svg>
+              </div>
+              <div class="line5-2 pattern column-2">
+                <svg>
+                  <use xlink:href="#pattern-line2-2"></use>
+                </svg>
+              </div>
+              <div class="line5-3 pattern column-3">
+                <svg>
+                  <use xlink:href="#pattern-line2-3"></use>
+                </svg>
+              </div>
+              <div class="line5-4 pattern column-4">
+                <svg>
+                  <use xlink:href="#pattern-line2-4"></use>
+                </svg>
+              </div>
+              <div class="line5-5 pattern column-5">
+                <svg>
+                  <use xlink:href="#pattern-line2-1"></use>
+                </svg>
+              </div>
+              <div class="line5-6 pattern column-6">
+                <svg>
+                  <use xlink:href="#pattern-line2-2"></use>
+                </svg>
+              </div>
+              <div class="line5-7 pattern column-7">
+                <svg>
+                  <use xlink:href="#pattern-line2-3"></use>
+                </svg>
+              </div>
+              <div class="line5-8 pattern column-8">
+                <svg>
+                  <use xlink:href="#pattern-line2-4"></use>
+                </svg>
+              </div>
+              <div class="line6-1 pattern column-1">
+                <svg>
+                  <use xlink:href="#pattern-line3-1"></use>
+                </svg>
+              </div>
+              <div class="line6-2 pattern column-2">
+                <svg>
+                  <use xlink:href="#pattern-line3-2"></use>
+                </svg>
+              </div>
+              <div class="line6-3 pattern column-3">
+                <svg>
+                  <use xlink:href="#pattern-line3-3"></use>
+                </svg>
+              </div>
+              <div class="line6-4 pattern column-4">
+                <svg>
+                  <use xlink:href="#pattern-line3-4"></use>
+                </svg>
+              </div>
+              <div class="line6-5 pattern column-5">
+                <svg>
+                  <use xlink:href="#pattern-line3-1"></use>
+                </svg>
+              </div>
+              <div class="line6-6 pattern column-6">
+                <svg>
+                  <use xlink:href="#pattern-line3-2"></use>
+                </svg>
+              </div>
+              <div class="line6-7 pattern column-7">
+                <svg>
+                  <use xlink:href="#pattern-line3-3"></use>
+                </svg>
+              </div>
+              <div class="line6-8 pattern column-8">
+                <svg>
+                  <use xlink:href="#pattern-line3-4"></use>
+                </svg>
+              </div>
+              <div class="line7-1 pattern column-1">
+                <svg>
+                  <use xlink:href="#pattern-line1-1"></use>
+                </svg>
+              </div>
+              <div class="line7-2 pattern column-2">
+                <svg>
+                  <use xlink:href="#pattern-line1-2"></use>
+                </svg>
+              </div>
+              <div class="line7-3 pattern column-3">
+                <svg>
+                  <use xlink:href="#pattern-line1-3"></use>
+                </svg>
+              </div>
+              <div class="line7-4 pattern column-4">
+                <svg>
+                  <use xlink:href="#pattern-line1-4"></use>
+                </svg>
+              </div>
+              <div class="line7-5 pattern column-5">
+                <svg>
+                  <use xlink:href="#pattern-line1-1"></use>
+                </svg>
+              </div>
+              <div class="line7-6 pattern column-6">
+                <svg>
+                  <use xlink:href="#pattern-line1-2"></use>
+                </svg>
+              </div>
+              <div class="line7-7 pattern column-7">
+                <svg>
+                  <use xlink:href="#pattern-line1-3"></use>
+                </svg>
+              </div>
+              <div class="line7-8 pattern column-8">
+                <svg>
+                  <use xlink:href="#pattern-line1-4"></use>
+                </svg>
+              </div>
+              <div class="line8-1 pattern column-1">
+                <svg>
+                  <use xlink:href="#pattern-line2-1"></use>
+                </svg>
+              </div>
+              <div class="line8-2 pattern column-2">
+                <svg>
+                  <use xlink:href="#pattern-line2-2"></use>
+                </svg>
+              </div>
+              <div class="line8-3 pattern column-3">
+                <svg>
+                  <use xlink:href="#pattern-line2-3"></use>
+                </svg>
+              </div>
+              <div class="line8-4 pattern column-4">
+                <svg>
+                  <use xlink:href="#pattern-line2-4"></use>
+                </svg>
+              </div>
+              <div class="line8-5 pattern column-5">
+                <svg>
+                  <use xlink:href="#pattern-line2-1"></use>
+                </svg>
+              </div>
+              <div class="line8-6 pattern column-6">
+                <svg>
+                  <use xlink:href="#pattern-line2-2"></use>
+                </svg>
+              </div>
+              <div class="line8-7 pattern column-7">
+                <svg>
+                  <use xlink:href="#pattern-line2-3"></use>
+                </svg>
+              </div>
+              <div class="line8-8 pattern column-8">
+                <svg>
+                  <use xlink:href="#pattern-line2-3"></use>
+                </svg>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="pattern"></div> -->
+    </section>
+
+    <section id="page-contacts" class="page-contacts layer">
+      <div class="left">
+        <header id="header--contacts" class="header header--contacts">
+          <div class="container">
+            <div class="header__logo-text">
+              <svg>
+                <use xlink:href="#logo-text"></use>
+              </svg>
+            </div>
+            <div class="header__logo-ico">
+              <svg>
+                <use xlink:href="#logo5"></use>
+              </svg>
+            </div>
+          </div>
+        </header>
+
+        <div class="patterns-mob patterns-mob--top">
+          <div class="container">
+            <div class="patterns-mob__grid" id="patternsGrid-3">
+              <div class="pattern line1-1 column-1">
+                <svg>
+                  <use xlink:href="#pattern-line1-1"></use>
+                </svg>
+              </div>
+              <div class="pattern line1-2 column-2">
+                <svg>
+                  <use xlink:href="#pattern-line1-2"></use>
+                </svg>
+              </div>
+              <div class="pattern line1-3 column-3">
+                <svg>
+                  <use xlink:href="#pattern-line1-3"></use>
+                </svg>
+              </div>
+              <div class="pattern line1-4 column-4">
+                <svg>
+                  <use xlink:href="#pattern-line1-4"></use>
+                </svg>
+              </div>
+              <div class="pattern line1-5 column-5">
+                <svg>
+                  <use xlink:href="#pattern-line3-1"></use>
+                </svg>
+              </div>
+              <div class="pattern line1-6 column-6">
+                <svg>
+                  <use xlink:href="#pattern-line3-3"></use>
+                </svg>
+              </div>
+              <div class="pattern line2-1 column-1">
+                <svg>
+                  <use xlink:href="#pattern-line2-1"></use>
+                </svg>
+              </div>
+              <div class="pattern line2-2 column-2">
+                <svg>
+                  <use xlink:href="#pattern-line2-2"></use>
+                </svg>
+              </div>
+              <div class="pattern line2-3 column-3">
+                <svg>
+                  <use xlink:href="#pattern-line2-3"></use>
+                </svg>
+              </div>
+              <div class="pattern line2-4 column-4">
+                <svg>
+                  <use xlink:href="#pattern-line2-4"></use>
+                </svg>
+              </div>
+              <div class="pattern line2-5 column-5">
+                <svg>
+                  <use xlink:href="#pattern-line3-2"></use>
+                </svg>
+              </div>
+              <div class="pattern line2-6 column-6">
+                <svg>
+                  <use xlink:href="#pattern-line3-4"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <article class="info">
+          <div class="container">
+            <h2 class="info__title">
+              Контактная информация
+            </h2>
+            <p class="info__descr">
+              Чтобы начать общение, свяжитесь с нами любым удобным способом
+            </p>
+          </div>
+        </article>
+
+        <footer class="footer">
+          <div class="container">
+            <div class="footer__adress">
+              Istambul Evliya Celebi Mah.Sadi Konuralp Cad.Iksv Vakfi Blok No:&nbsp;5/2&nbsp;Beyoglu
+              <!-- Москва, ул.&nbsp;Кольцовская&nbsp;22, офис&nbsp;14 -->
+            </div>
+            <div class="footer__tel">
+              <p>Телефон</p>
+              <a href="tel:+905535135128">
+                +90 (553) 513 51 28
+              </a>
+              <p>TAX ID</p>
+              <p>3891782265</p>
+            </div>
+            <div class="footer__mail">
+              <p>
+                Электронная почта
+              </p>
+              <a href="mailto:expo@gastellocars.com">
+                expo@gastellocars.com
+              </a>
+            </div>
+          </div>
+        </footer>
+
+        <div class="container">
+          <button href="#" class="button button--toPromo" onclick="showPromo()">
+            <svg class="arrow">
+              <use xlink:href="#arrow"></use>
+            </svg>
+            <span class="button-content">
+              Назад
+            </span>
+
+          </button>
+        </div>
+        <div class="map">
+          <div id="map" style="width: 100%; height: 100%"></div>
+        </div>
+        <div class="map-ico">
+          <div class="header__logo-ico">
+            <svg id="logo-6"  class="logo-svg">
+              <use xlink:href="#logo6"></use>
+            </svg>
+            <svg id="logo-5" class="active logo-svg">
+              <use xlink:href="#logo5"></use>
+            </svg>
+            <svg id="logo-4"  class="logo-svg">
+              <use xlink:href="#logo4"></use>
+            </svg>
+            <svg id="logo-3" class="logo-svg">
+              <use xlink:href="#logo3"></use>
+            </svg>
+            <svg id="logo-2" class="logo-svg">
+              <use xlink:href="#logo2"></use>
+            </svg>
+            <svg id="logo-1" class="logo-svg">
+              <use xlink:href="#logo1"></use>
+            </svg>
+          </div>
+        </div>
+
+        <!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9adbca7b42f31ecd53b46701ffb2b38e8cf9d5fde80ed89cae832834377323a7&amp;width=940&amp;height=591&amp;lang=ru_RU&amp;scroll=true"></script> -->
+        <!-- <div class="map">
+            <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.864703220071!2d28.969002376041537!3d41.0282158713477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab9e6b705cc5b%3A0xfb5ef6bbcffa0bee!2sGASTELLO%20TRANSPORT%20LOJISTIK%20VE%20OTOMOTIV%20ITHALAT%20IHRACAT%20LIMITED%20SIRKETI!5e0!3m2!1sru!2sde!4v1704957437824!5m2!1sru!2sde" style="width: 100%; height: 100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div> -->
+
+
+      </div>
+      <div class="right">
+        <div class="patterns-web__grid" id="patternsGridWeb2">
+          <div class="line1-1 pattern column-1">
+            <svg>
+              <use xlink:href="#pattern-line1-1"></use>
+            </svg>
+          </div>
+          <div class="line1-2 pattern column-2">
+            <svg>
+              <use xlink:href="#pattern-line1-2"></use>
+            </svg>
+          </div>
+          <div class="line1-3 pattern column-3">
+            <svg>
+              <use xlink:href="#pattern-line1-3"></use>
+            </svg>
+          </div>
+          <div class="line1-4 pattern column-4">
+            <svg>
+              <use xlink:href="#pattern-line1-4"></use>
+            </svg>
+          </div>
+          <div class="line1-5 pattern column-5">
+            <svg>
+              <use xlink:href="#pattern-line1-1"></use>
+            </svg>
+          </div>
+          <div class="line1-6 pattern column-6">
+            <svg>
+              <use xlink:href="#pattern-line1-2"></use>
+            </svg>
+          </div>
+          <div class="line1-7 pattern column-7">
+            <svg>
+              <use xlink:href="#pattern-line1-3"></use>
+            </svg>
+          </div>
+          <div class="line1-8 pattern column-8">
+            <svg>
+              <use xlink:href="#pattern-line1-4"></use>
+            </svg>
+          </div>
+          <div class="line2-1 pattern column-1">
+            <svg>
+              <use xlink:href="#pattern-line2-1"></use>
+            </svg>
+          </div>
+          <div class="line2-2 pattern column-2">
+            <svg>
+              <use xlink:href="#pattern-line2-2"></use>
+            </svg>
+          </div>
+          <div class="line2-3 pattern column-3">
+            <svg>
+              <use xlink:href="#pattern-line2-3"></use>
+            </svg>
+          </div>
+          <div class="line2-4 pattern column-4">
+            <svg>
+              <use xlink:href="#pattern-line2-4"></use>
+            </svg>
+          </div>
+          <div class="line2-5 pattern column-5">
+            <svg>
+              <use xlink:href="#pattern-line2-1"></use>
+            </svg>
+          </div>
+          <div class="line2-6 pattern column-6">
+            <svg>
+              <use xlink:href="#pattern-line2-2"></use>
+            </svg>
+          </div>
+          <div class="line2-7 pattern column-7">
+            <svg>
+              <use xlink:href="#pattern-line2-3"></use>
+            </svg>
+          </div>
+          <div class="line2-8 pattern column-8">
+            <svg>
+              <use xlink:href="#pattern-line2-1"></use>
+            </svg>
+          </div>
+          <div class="line3-1 pattern column-1">
+            <svg>
+              <use xlink:href="#pattern-line3-1"></use>
+            </svg>
+          </div>
+          <div class="line3-2 pattern column-2">
+            <svg>
+              <use xlink:href="#pattern-line3-2"></use>
+            </svg>
+          </div>
+          <div class="line3-3 pattern column-3">
+            <svg>
+              <use xlink:href="#pattern-line3-3"></use>
+            </svg>
+          </div>
+          <div class="line3-4 pattern column-4">
+            <svg>
+              <use xlink:href="#pattern-line3-4"></use>
+            </svg>
+          </div>
+          <div class="line3-5 pattern column-5">
+            <svg>
+              <use xlink:href="#pattern-line3-1"></use>
+            </svg>
+          </div>
+          <div class="line3-6 pattern column-6">
+            <svg>
+              <use xlink:href="#pattern-line3-2"></use>
+            </svg>
+          </div>
+          <div class="line3-7 pattern column-7">
+            <svg>
+              <use xlink:href="#pattern-line3-3"></use>
+            </svg>
+          </div>
+          <div class="line3-8 pattern column-8">
+            <svg>
+              <use xlink:href="#pattern-line3-4"></use>
+            </svg>
+          </div>
+
+          <div class="line4-1 pattern column-1">
+            <svg>
+              <use xlink:href="#pattern-line1-1"></use>
+            </svg>
+          </div>
+          <div class="line4-2 pattern column-2">
+            <svg>
+              <use xlink:href="#pattern-line1-2"></use>
+            </svg>
+          </div>
+          <div class="line4-3 pattern column-3">
+            <svg>
+              <use xlink:href="#pattern-line1-3"></use>
+            </svg>
+          </div>
+          <div class="line4-4 pattern column-4">
+            <svg>
+              <use xlink:href="#pattern-line1-4"></use>
+            </svg>
+          </div>
+          <div class="line4-5 pattern column-5">
+            <svg>
+              <use xlink:href="#pattern-line1-1"></use>
+            </svg>
+          </div>
+          <div class="line4-6 pattern column-6">
+            <svg>
+              <use xlink:href="#pattern-line1-2"></use>
+            </svg>
+          </div>
+          <div class="line4-7 pattern column-7">
+            <svg>
+              <use xlink:href="#pattern-line1-3"></use>
+            </svg>
+          </div>
+          <div class="line4-8 pattern column-8">
+            <svg>
+              <use xlink:href="#pattern-line1-4"></use>
+            </svg>
+          </div>
+          <div class="line5-1 pattern column-1">
+            <svg>
+              <use xlink:href="#pattern-line2-1"></use>
+            </svg>
+          </div>
+          <div class="line5-2 pattern column-2">
+            <svg>
+              <use xlink:href="#pattern-line2-2"></use>
+            </svg>
+          </div>
+          <div class="line5-3 pattern column-3">
+            <svg>
+              <use xlink:href="#pattern-line2-3"></use>
+            </svg>
+          </div>
+          <div class="line5-4 pattern column-4">
+            <svg>
+              <use xlink:href="#pattern-line2-4"></use>
+            </svg>
+          </div>
+          <div class="line5-5 pattern column-5">
+            <svg>
+              <use xlink:href="#pattern-line2-1"></use>
+            </svg>
+          </div>
+          <div class="line5-6 pattern column-6">
+            <svg>
+              <use xlink:href="#pattern-line2-2"></use>
+            </svg>
+          </div>
+          <div class="line5-7 pattern column-7">
+            <svg>
+              <use xlink:href="#pattern-line2-3"></use>
+            </svg>
+          </div>
+          <div class="line5-8 pattern column-8">
+            <svg>
+              <use xlink:href="#pattern-line2-4"></use>
+            </svg>
+          </div>
+          <div class="line6-1 pattern column-1">
+            <svg>
+              <use xlink:href="#pattern-line3-1"></use>
+            </svg>
+          </div>
+          <div class="line6-2 pattern column-2">
+            <svg>
+              <use xlink:href="#pattern-line3-2"></use>
+            </svg>
+          </div>
+          <div class="line6-3 pattern column-3">
+            <svg>
+              <use xlink:href="#pattern-line3-3"></use>
+            </svg>
+          </div>
+          <div class="line6-4 pattern column-4">
+            <svg>
+              <use xlink:href="#pattern-line3-4"></use>
+            </svg>
+          </div>
+          <div class="line6-5 pattern column-5">
+            <svg>
+              <use xlink:href="#pattern-line3-1"></use>
+            </svg>
+          </div>
+          <div class="line6-6 pattern column-6">
+            <svg>
+              <use xlink:href="#pattern-line3-2"></use>
+            </svg>
+          </div>
+          <div class="line6-7 pattern column-7">
+            <svg>
+              <use xlink:href="#pattern-line3-3"></use>
+            </svg>
+          </div>
+          <div class="line6-8 pattern column-8">
+            <svg>
+              <use xlink:href="#pattern-line3-4"></use>
+            </svg>
+          </div>
+          <div class="line7-1 pattern column-1">
+            <svg>
+              <use xlink:href="#pattern-line1-1"></use>
+            </svg>
+          </div>
+          <div class="line7-2 pattern column-2">
+            <svg>
+              <use xlink:href="#pattern-line1-2"></use>
+            </svg>
+          </div>
+          <div class="line7-3 pattern column-3">
+            <svg>
+              <use xlink:href="#pattern-line1-3"></use>
+            </svg>
+          </div>
+          <div class="line7-4 pattern column-4">
+            <svg>
+              <use xlink:href="#pattern-line1-4"></use>
+            </svg>
+          </div>
+          <div class="line7-5 pattern column-5">
+            <svg>
+              <use xlink:href="#pattern-line1-1"></use>
+            </svg>
+          </div>
+          <div class="line7-6 pattern column-6">
+            <svg>
+              <use xlink:href="#pattern-line1-2"></use>
+            </svg>
+          </div>
+          <div class="line7-7 pattern column-7">
+            <svg>
+              <use xlink:href="#pattern-line1-3"></use>
+            </svg>
+          </div>
+          <div class="line7-8 pattern column-8">
+            <svg>
+              <use xlink:href="#pattern-line1-4"></use>
+            </svg>
+          </div>
+          <div class="line8-1 pattern column-1">
+            <svg>
+              <use xlink:href="#pattern-line2-1"></use>
+            </svg>
+          </div>
+          <div class="line8-2 pattern column-2">
+            <svg>
+              <use xlink:href="#pattern-line2-2"></use>
+            </svg>
+          </div>
+          <div class="line8-3 pattern column-3">
+            <svg>
+              <use xlink:href="#pattern-line2-3"></use>
+            </svg>
+          </div>
+          <div class="line8-4 pattern column-4">
+            <svg>
+              <use xlink:href="#pattern-line2-4"></use>
+            </svg>
+          </div>
+          <div class="line8-5 pattern column-5">
+            <svg>
+              <use xlink:href="#pattern-line2-1"></use>
+            </svg>
+          </div>
+          <div class="line8-6 pattern column-6">
+            <svg>
+              <use xlink:href="#pattern-line2-2"></use>
+            </svg>
+          </div>
+          <div class="line8-7 pattern column-7">
+            <svg>
+              <use xlink:href="#pattern-line2-3"></use>
+            </svg>
+          </div>
+          <div class="line8-8 pattern column-8">
+            <svg>
+              <use xlink:href="#pattern-line2-3"></use>
+            </svg>
+          </div>
+
+
+        </div>
+      </div>
+      <!-- <div class="pattern"></div> -->
+      <div class="unpin">unpin</div>
+    </section>
+
+    <!-- <section id="pinn" class="container-fluid">
+      <div class="layer bg-blue height height100">
+        <div class="height patern-front">
+          <h1>SECTION 1</h1>
+        </div>
+        <div class="pattern"></div>
+      </div>
+
+      <div class="layer bg-brick height height100">
+        <div class="height patern-front">
+          <h1>SECTION 2</h1>
+        </div>
+        <div class="pattern"></div>
+        <div class="unpin">unpin</div>
+      </div>
+    </section> -->
+
+
+  </div>
+  <!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script> -->
+
+  <script src="js/main.js"></script>
+  <svg width="0" height="0" class="hidden">
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 9" id="arrow">
+      <path
+        d="M7.04513 2.21995L8.42513 3.59995L1.18619 3.59995C0.726193 3.59995 0.363037 3.96311 0.363037 4.42311C0.363037 4.8831 0.726193 5.24626 1.18619 5.24626L8.40091 5.24626L7.02092 6.62626C6.70618 6.94099 6.70618 7.47363 7.02092 7.78836C7.33565 8.1031 7.86828 8.1031 8.18302 7.78836L10.9672 5.00416C11.1367 4.83468 11.2093 4.641 11.2093 4.42311C11.2093 4.20521 11.1367 4.01153 10.9672 3.84205L8.18302 1.05785C7.86828 0.743112 7.33565 0.743112 7.02092 1.05785C6.70618 1.3968 6.70618 1.90522 7.04513 2.21995Z">
+      </path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 47" id="logo-text">
+      <path d="M0 3.6134V0.764648H13.4825V3.6134H8.45662V17.1071H5.02588V3.6134H0Z"></path>
+      <path
+        d="M18.8851 17.3794C17.6237 17.3794 16.5379 17.1238 15.6277 16.6127C14.7229 16.0963 14.0257 15.367 13.536 14.4246C13.0463 13.477 12.8015 12.3563 12.8015 11.0626C12.8015 9.8009 13.0463 8.69355 13.536 7.74058C14.0257 6.78762 14.7149 6.04494 15.6038 5.51256C16.498 4.98018 17.5465 4.71399 18.7494 4.71399C19.5584 4.71399 20.3115 4.84442 21.0087 5.10529C21.7113 5.36083 22.3234 5.74681 22.845 6.26322C23.3719 6.77963 23.7817 7.42914 24.0745 8.21174C24.3672 8.98902 24.5136 9.89939 24.5136 10.9429V11.8772H14.1587V9.76896H21.3121C21.3121 9.27917 21.2057 8.84527 20.9928 8.46728C20.7799 8.08929 20.4845 7.79382 20.1066 7.58087C19.734 7.36259 19.3002 7.25345 18.8052 7.25345C18.289 7.25345 17.8312 7.37324 17.432 7.61281C17.0382 7.84706 16.7295 8.16382 16.5059 8.56311C16.2824 8.95707 16.168 9.39629 16.1626 9.88076V11.8852C16.1626 12.4921 16.2744 13.0165 16.498 13.4584C16.7268 13.9002 17.0488 14.241 17.464 14.4805C17.8791 14.7201 18.3715 14.8399 18.941 14.8399C19.3189 14.8399 19.6648 14.7867 19.9788 14.6802C20.2929 14.5737 20.5617 14.414 20.7852 14.201C21.0087 13.9881 21.1791 13.7272 21.2962 13.4184L24.4417 13.6261C24.282 14.382 23.9547 15.0422 23.4597 15.6065C22.9701 16.1655 22.3367 16.6021 21.5596 16.9162C20.7879 17.225 19.8963 17.3794 18.8851 17.3794Z">
+      </path>
+      <path
+        d="M28.1322 4.85034L30.3699 9.13544L32.6631 4.85034H36.1307L32.5996 10.9787L36.2259 17.1072H32.7742L30.3699 12.8699L28.0053 17.1072H24.5139L28.1322 10.9787L24.6408 4.85034H28.1322Z">
+      </path>
+      <path
+        d="M44.7178 4.90521V7.43987H37.3154V4.90521H44.7178ZM38.996 1.99036H42.4051V13.3329C42.4051 13.6445 42.4531 13.8874 42.5491 14.0617C42.6451 14.2306 42.7785 14.3494 42.9492 14.4181C43.1253 14.4867 43.328 14.5211 43.5574 14.5211C43.7175 14.5211 43.8775 14.5079 44.0376 14.4815C44.1976 14.4498 44.3204 14.426 44.4057 14.4102L44.9419 16.9211C44.7712 16.9739 44.5311 17.0346 44.2217 17.1032C43.9122 17.1772 43.5361 17.2221 43.0933 17.2379C42.2717 17.2696 41.5515 17.1613 40.9326 16.9131C40.3191 16.665 39.8416 16.2795 39.5001 15.7567C39.1587 15.2339 38.9906 14.5739 38.996 13.7765V1.99036Z">
+      </path>
+      <path d="M56.2451 0.900848V17.1071H52.8405V0.900848H56.2451Z"></path>
+      <path
+        d="M64.3716 17.3794C63.1102 17.3794 62.0244 17.1238 61.1142 16.6127C60.2094 16.0963 59.5122 15.367 59.0225 14.4246C58.5329 13.477 58.288 12.3563 58.288 11.0626C58.288 9.8009 58.5329 8.69355 59.0225 7.74058C59.5122 6.78762 60.2014 6.04494 61.0903 5.51256C61.9845 4.98018 63.033 4.71399 64.2359 4.71399C65.0449 4.71399 65.798 4.84442 66.4952 5.10529C67.1978 5.36083 67.8099 5.74681 68.3315 6.26322C68.8584 6.77963 69.2682 7.42914 69.561 8.21174C69.8537 8.98902 70.0001 9.89939 70.0001 10.9429V11.8772H59.6453V9.76896H66.7986C66.7986 9.27917 66.6922 8.84527 66.4793 8.46728C66.2664 8.08929 65.971 7.79382 65.5931 7.58087C65.2205 7.36259 64.7867 7.25345 64.2918 7.25345C63.7755 7.25345 63.3177 7.37324 62.9186 7.61281C62.5247 7.84706 62.216 8.16382 61.9925 8.56311C61.7689 8.95707 61.6545 9.39629 61.6492 9.88076V11.8852C61.6492 12.4921 61.7609 13.0165 61.9845 13.4584C62.2133 13.9002 62.5353 14.241 62.9505 14.4805C63.3656 14.7201 63.858 14.8399 64.4275 14.8399C64.8054 14.8399 65.1513 14.7867 65.4654 14.6802C65.7794 14.5737 66.0482 14.414 66.2717 14.201C66.4953 13.9881 66.6656 13.7272 66.7827 13.4184L69.9282 13.6261C69.7686 14.382 69.4412 15.0422 68.9462 15.6065C68.4566 16.1655 67.8232 16.6021 67.0461 16.9162C66.2744 17.225 65.3829 17.3794 64.3716 17.3794Z"
+        f></path>
+      <path d="M46.9846 17.107V5.93967H50.3892V17.107H46.9846Z"></path>
+      <path
+        d="M47.384 3.81757C47.7463 4.15046 48.1807 4.3169 48.6869 4.3169C49.1932 4.3169 49.6248 4.15046 49.9819 3.81757C50.3442 3.4794 50.5254 3.07518 50.5254 2.60491C50.5254 2.13993 50.3442 1.74099 49.9819 1.40811C49.6248 1.06993 49.1932 0.900848 48.6869 0.900848C48.1807 0.900848 47.7463 1.06993 47.384 1.40811C47.0269 1.74099 46.8484 2.13993 46.8484 2.60491C46.8484 3.07518 47.0269 3.4794 47.384 3.81757Z">
+      </path>
+      <path
+        d="M5.02521 41.2121V25.0058H8.47788V32.1514H8.69317L14.5699 25.0058H18.7083L12.6482 32.2622L18.7801 41.2121H14.6496L10.1763 34.5491L8.47788 36.6066V41.2121H5.02521Z">
+      </path>
+      <path d="M20.2783 41.2121V30.0448H23.683V41.2121H20.2783Z"></path>
+      <path
+        d="M20.6776 27.9225C21.04 28.2554 21.4743 28.4219 21.9806 28.4219C22.4868 28.4219 22.9185 28.2554 23.2755 27.9225C23.6379 27.5844 23.8191 27.1801 23.8191 26.7099C23.8191 26.2449 23.6379 25.8459 23.2755 25.5131C22.9185 25.1749 22.4868 25.0058 21.9806 25.0058C21.4743 25.0058 21.04 25.1749 20.6776 25.5131C20.3206 25.8459 20.142 26.2449 20.142 26.7099C20.142 27.1801 20.3206 27.5844 20.6776 27.9225Z">
+      </path>
+      <path
+        d="M29.2626 34.1395V41.2121H25.862V28.9784H29.103V31.1368H29.2467C29.5181 30.4253 29.9731 29.8625 30.6117 29.4483C31.2503 29.0289 32.0246 28.8191 32.9347 28.8191C33.7862 28.8191 34.5286 29.005 35.1618 29.3766C35.7951 29.7483 36.2874 30.2793 36.6386 30.9696C36.9899 31.6545 37.1655 32.4722 37.1655 33.4227V41.2121H33.7649V34.028C33.7702 33.2793 33.5786 32.6953 33.1901 32.2758C32.8016 31.851 32.2668 31.6386 31.5856 31.6386C31.1279 31.6386 30.7235 31.7368 30.3722 31.9333C30.0263 32.1298 29.7549 32.4165 29.558 32.7935C29.3664 33.1652 29.268 33.6138 29.2626 34.1395Z">
+      </path>
+      <path
+        d="M44.9201 46.1148C43.8176 46.1148 42.8721 45.963 42.0838 45.6593C41.3008 45.3609 40.6777 44.9533 40.2143 44.4364C39.7509 43.9196 39.4499 43.3388 39.3114 42.6941L42.4593 42.2705C42.5552 42.5156 42.707 42.7447 42.9147 42.9578C43.1225 43.1709 43.3968 43.3414 43.7377 43.4693C44.0839 43.6025 44.5047 43.6691 45 43.6691C45.7404 43.6691 46.3503 43.488 46.8297 43.1257C47.3144 42.7687 47.5567 42.1692 47.5567 41.3273V39.0815H47.4129C47.2638 39.4225 47.0401 39.7448 46.7418 40.0486C46.4435 40.3523 46.06 40.6 45.5913 40.7919C45.1225 40.9837 44.5633 41.0796 43.9134 41.0796C42.992 41.0796 42.1531 40.8664 41.3967 40.4402C40.6457 40.0086 40.0465 39.3505 39.5991 38.466C39.157 37.5762 38.9359 36.4519 38.9359 35.0932C38.9359 33.7025 39.1623 32.541 39.615 31.6085C40.0678 30.676 40.6697 29.978 41.4207 29.5145C42.177 29.0509 43.0053 28.8191 43.9055 28.8191C44.5926 28.8191 45.1678 28.9363 45.6312 29.1708C46.0946 29.3999 46.4675 29.6876 46.7498 30.034C47.0374 30.375 47.2584 30.7107 47.4129 31.041H47.5407V28.979H50.9204V41.3753C50.9204 42.4197 50.6647 43.2935 50.1533 43.9968C49.642 44.7002 48.9336 45.2277 48.0281 45.5793C47.1279 45.9363 46.092 46.1148 44.9201 46.1148ZM44.992 38.522C45.5407 38.522 46.0041 38.3861 46.3822 38.1144C46.7657 37.8373 47.0587 37.443 47.2611 36.9315C47.4688 36.4146 47.5727 35.7966 47.5727 35.0772C47.5727 34.3579 47.4715 33.7345 47.2691 33.207C47.0667 32.6742 46.7737 32.2612 46.3902 31.9682C46.0067 31.6751 45.5407 31.5286 44.992 31.5286C44.4328 31.5286 43.9614 31.6804 43.5779 31.9841C43.1944 32.2825 42.9041 32.6981 42.707 33.231C42.5099 33.7638 42.4114 34.3792 42.4114 35.0772C42.4114 35.7859 42.5099 36.3987 42.707 36.9155C42.9094 37.427 43.1997 37.824 43.5779 38.1064C43.9614 38.3835 44.4328 38.522 44.992 38.522Z">
+      </path>
+    </symbol>
+    <symbol  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 30" id="mouse-scroll">
+      <path
+        d="M7.5 0C3.35774 0 0 3.35774 0 7.5V14.6234C0 17.6987 1.88284 20.3661 4.55021 21.5272V19.1109C3.10669 18.1381 2.13389 16.5063 2.13389 14.6234V7.5C2.13389 4.55021 4.55021 2.13389 7.5 2.13389C10.4812 2.13389 12.8661 4.55021 12.8661 7.5V14.6234C12.8661 16.5063 11.8933 18.1381 10.4498 19.1109V21.5272C13.1172 20.3661 15 17.7301 15 14.6234V7.5C15 3.35774 11.6423 0 7.5 0Z"
+        ></path>
+      <path
+        d="M7.49999 9.47705C8.09622 9.47705 8.56694 9.00634 8.56694 8.4101V5.52307C8.56694 4.92684 8.09622 4.45613 7.49999 4.45613C6.90376 4.45613 6.43304 4.92684 6.43304 5.52307V8.4101C6.43304 8.97496 6.90376 9.47705 7.49999 9.47705Z"
+        ></path>
+      <path
+        d="M10.3556 24.4143L8.56693 26.203V16.8201C8.56693 16.2239 8.09621 15.7532 7.49998 15.7532C6.90375 15.7532 6.43303 16.2239 6.43303 16.8201V26.1716L4.64433 24.3829C4.23638 23.975 3.546 23.975 3.13805 24.3829C2.7301 24.7909 2.7301 25.4812 3.13805 25.8892L6.74684 29.498C6.96651 29.7176 7.21755 29.8118 7.49998 29.8118C7.78241 29.8118 8.03345 29.7176 8.25312 29.498L11.8619 25.8892C12.2699 25.4812 12.2699 24.7909 11.8619 24.3829C11.4226 23.975 10.7636 23.975 10.3556 24.4143Z"
+        ></path>
+    </symbol>
+    <symbol  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 46" id="logo1">
+      <path d="M0 0H45.1008V45.1008H0V0Z" fill="black"></path>
+      <path
+        d="M16.9551 20.1201L19.0462 26.224H26.1674L28.2585 20.1201L24.4719 22.4373L22.6068 18.8767L20.7417 22.4373L16.9551 20.1201Z"
+        fill="white"></path>
+    </symbol>
+    <symbol  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 46" id="logo2">
+      <path d="M0 0H45.1008V45.1008H0V0Z" fill="black"></path>
+      <path
+        d="M5.70825 32.78L7.79939 38.8839H14.9206L17.0117 32.78L13.2251 35.0972L11.36 31.5366L9.49491 35.0972L5.70825 32.78Z"
+        fill="white"></path>
+      <path
+        d="M27.9197 6.95166L30.0108 13.0555H37.132L39.2231 6.95166L35.4365 9.26887L33.5714 5.70828L31.7063 9.26887L27.9197 6.95166Z"
+        fill="white"></path>
+    </symbol>
+    <symbol  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 46" id="logo3">
+      <path d="M0 0H45.1008V45.1008H0V0Z" fill="black"></path>
+      <path
+        d="M5.70825 6.95166L7.79939 13.0555H14.9206L17.0117 6.95166L13.2251 9.26887L11.36 5.70828L9.49491 9.26887L5.70825 6.95166Z"
+        fill="white"></path>
+      <path
+        d="M27.9197 32.78L30.0108 38.8839H37.132L39.2231 32.78L35.4365 35.0972L33.5714 31.5366L31.7063 35.0972L27.9197 32.78Z"
+        fill="white"></path>
+      <path
+        d="M16.9551 20.1201L19.0462 26.224H26.1674L28.2585 20.1201L24.4719 22.4373L22.6068 18.8767L20.7417 22.4373L16.9551 20.1201Z"
+        fill="white"></path>
+    </symbol>
+    <symbol  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 46" id="logo4">
+      <path d="M0 0H45.1008V45.1008H0V0Z" fill="black"></path>
+      <path
+        d="M5.70825 6.95166L7.79939 13.0555H14.9206L17.0117 6.95166L13.2251 9.26887L11.36 5.70828L9.49491 9.26887L5.70825 6.95166Z"
+        fill="white"></path>
+      <path
+        d="M5.70825 32.78L7.79939 38.8839H14.9206L17.0117 32.78L13.2251 35.0972L11.36 31.5366L9.49491 35.0972L5.70825 32.78Z"
+        fill="white"></path>
+      <path
+        d="M27.9197 6.95166L30.0108 13.0555H37.132L39.2231 6.95166L35.4365 9.26887L33.5714 5.70828L31.7063 9.26887L27.9197 6.95166Z"
+        fill="white"></path>
+      <path
+        d="M27.9197 32.78L30.0108 38.8839H37.132L39.2231 32.78L35.4365 35.0972L33.5714 31.5366L31.7063 35.0972L27.9197 32.78Z"
+        fill="white"></path>
+    </symbol>
+    <symbol  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 46" id="logo5">
+      <path d="M0 0H45.1008V45.1008H0V0Z" fill="black"></path>
+      <path d="M5.70825 6.95166L7.79939 13.0555H14.9206L17.0117 6.95166L13.2251 9.26887L11.36 5.70828L9.49491 9.26887L5.70825 6.95166Z" fill="white"></path>
+      <path d="M5.70825 32.78L7.79939 38.8839H14.9206L17.0117 32.78L13.2251 35.0972L11.36 31.5366L9.49491 35.0972L5.70825 32.78Z" fill="white"></path>
+      <path d="M27.9197 6.95166L30.0108 13.0555H37.132L39.2231 6.95166L35.4365 9.26887L33.5714 5.70828L31.7063 9.26887L27.9197 6.95166Z" fill="white"></path>
+      <path d="M27.9197 32.78L30.0108 38.8839H37.132L39.2231 32.78L35.4365 35.0972L33.5714 31.5366L31.7063 35.0972L27.9197 32.78Z" fill="white"></path>
+      <path d="M16.9551 20.1201L19.0462 26.224H26.1674L28.2585 20.1201L24.4719 22.4373L22.6068 18.8767L20.7417 22.4373L16.9551 20.1201Z" fill="white"></path>
+    </symbol>
+    <symbol  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 46" id="logo6">
+      <path d="M0 0H45.1008V45.1008H0V0Z" fill="black"></path>
+      <path
+        d="M5.70825 6.95166L7.79939 13.0555H14.9206L17.0117 6.95166L13.2251 9.26887L11.36 5.70828L9.49491 9.26887L5.70825 6.95166Z"
+        fill="white"></path>
+      <path
+        d="M5.70825 32.78L7.79939 38.8839H14.9206L17.0117 32.78L13.2251 35.0972L11.36 31.5366L9.49491 35.0972L5.70825 32.78Z"
+        fill="white"></path>
+      <path
+        d="M27.9197 6.95166L30.0108 13.0555H37.132L39.2231 6.95166L35.4365 9.26887L33.5714 5.70828L31.7063 9.26887L27.9197 6.95166Z"
+        fill="white"></path>
+      <path
+        d="M27.9197 32.78L30.0108 38.8839H37.132L39.2231 32.78L35.4365 35.0972L33.5714 31.5366L31.7063 35.0972L27.9197 32.78Z"
+        fill="white"></path>
+      <path
+        d="M6 20.1201L8.09114 26.224H15.2123L17.3035 20.1201L13.5168 22.4373L11.6517 18.8767L9.78666 22.4373L6 20.1201Z"
+        fill="white"></path>
+      <path
+        d="M28 20.1201L30.0911 26.224H37.2123L39.3035 20.1201L35.5168 22.4373L33.6517 18.8767L31.7867 22.4373L28 20.1201Z"
+        fill="white"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 113 112" id="pattern-line1-1">
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M0 18.13V0.477295C4.87932 0.477295 8.8348 4.42898 8.8348 9.30363C8.8348 14.1783 4.87932 18.13 0 18.13ZM0 64.9095V47.2568C4.87932 47.2568 8.8348 51.2085 8.8348 56.0832C8.8348 60.9578 4.87932 64.9095 0 64.9095ZM0 111.689V94.0364C4.87932 94.0364 8.8348 97.9881 8.8348 102.863C8.8348 107.737 4.87932 111.689 0 111.689ZM112.644 70.6466V88.2993C107.764 88.2993 103.809 84.3476 103.809 79.473C103.809 74.5983 107.764 70.6466 112.644 70.6466ZM112.644 23.8671C107.764 23.8671 103.809 27.8188 103.809 32.6934C103.809 37.568 107.764 41.5197 112.644 41.5197V23.8671ZM31.3635 32.6934C31.3635 37.568 27.4081 41.5197 22.5287 41.5197C17.6494 41.5197 13.6939 37.568 13.6939 32.6934C13.6939 27.8188 17.6494 23.8671 22.5287 23.8671C27.4081 23.8671 31.3635 27.8188 31.3635 32.6934ZM22.5287 88.2993C27.4081 88.2993 31.3635 84.3476 31.3635 79.473C31.3635 74.5983 27.4081 70.6466 22.5287 70.6466C17.6494 70.6466 13.6939 74.5983 13.6939 79.473C13.6939 84.3476 17.6494 88.2993 22.5287 88.2993ZM45.0575 18.13C49.9368 18.13 53.8923 14.1783 53.8923 9.30363C53.8923 4.42898 49.9368 0.477295 45.0575 0.477295C40.1782 0.477295 36.2227 4.42898 36.2227 9.30363C36.2227 14.1783 40.1782 18.13 45.0575 18.13ZM53.8923 56.0832C53.8923 60.9578 49.9368 64.9095 45.0575 64.9095C40.1782 64.9095 36.2227 60.9578 36.2227 56.0832C36.2227 51.2085 40.1782 47.2568 45.0575 47.2568C49.9368 47.2568 53.8923 51.2085 53.8923 56.0832ZM45.0575 111.689C49.9368 111.689 53.8923 107.737 53.8923 102.863C53.8923 97.9881 49.9368 94.0364 45.0575 94.0364C40.1782 94.0364 36.2227 97.9881 36.2227 102.863C36.2227 107.737 40.1782 111.689 45.0575 111.689ZM76.421 32.6934C76.421 37.568 72.4655 41.5197 67.5862 41.5197C62.7069 41.5197 58.7514 37.568 58.7514 32.6934C58.7514 27.8188 62.7069 23.8671 67.5862 23.8671C72.4655 23.8671 76.421 27.8188 76.421 32.6934ZM67.5862 88.2993C72.4655 88.2993 76.421 84.3476 76.421 79.473C76.421 74.5983 72.4655 70.6466 67.5862 70.6466C62.7069 70.6466 58.7514 74.5983 58.7514 79.473C58.7514 84.3476 62.7069 88.2993 67.5862 88.2993ZM90.1149 18.13C94.9943 18.13 98.9497 14.1783 98.9497 9.30363C98.9497 4.42898 94.9943 0.477295 90.1149 0.477295C85.2356 0.477295 81.2801 4.42898 81.2801 9.30363C81.2801 14.1783 85.2356 18.13 90.1149 18.13ZM98.9497 56.0832C98.9497 60.9578 94.9943 64.9095 90.1149 64.9095C85.2356 64.9095 81.2801 60.9578 81.2801 56.0832C81.2801 51.2085 85.2356 47.2568 90.1149 47.2568C94.9943 47.2568 98.9497 51.2085 98.9497 56.0832ZM90.1149 111.689C94.9943 111.689 98.9497 107.737 98.9497 102.863C98.9497 97.9881 94.9943 94.0364 90.1149 94.0364C85.2356 94.0364 81.2801 97.9881 81.2801 102.863C81.2801 107.737 85.2356 111.689 90.1149 111.689Z">
+      </path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114 113" id="pattern-line1-2">
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M19.4949 0H10.1242L0.908081 9.21614V18.5869L19.4949 0ZM0.908081 46.6992V37.3285L38.2366 0H47.6073L0.908081 46.6992ZM0.908081 74.8112V65.4405L66.3486 0H75.7193L0.908081 74.8112ZM0.908081 102.923V93.5527L94.4607 0H103.831L0.908081 102.923ZM19.3 112.644H9.92924L113.552 9.02116V18.3919L19.3 112.644ZM47.4121 112.644H38.0414L113.552 37.1333V46.504L47.4121 112.644ZM75.5243 112.644H66.1536L113.552 65.2455V74.6162L75.5243 112.644ZM103.636 112.644H94.2658L113.552 93.3577V102.728L103.636 112.644Z">
+      </path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114 113" id="pattern-line1-3">
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M28.9545 0L38.3634 9.40889V18.7739L19.5895 0H28.9545ZM0.81604 28.1384L10.2249 37.5473H19.5899L0.81604 18.7734V28.1384ZM10.2249 75.0948L0.81604 65.6859V56.3209L19.5899 75.0948H10.2249ZM0.81604 103.235L10.2249 112.644H19.5899L0.81604 93.8698V103.235ZM19.5899 37.5473L19.5903 27.2451L13.833 20.867H21.683V13.017L28.1012 18.7743L38.3634 18.7739L57.137 37.547V27.2452L51.3797 20.8671H59.2297V13.0171L65.6479 18.7744H75.9109V37.5483H66.5027L75.9108 46.9564V56.321L75.9109 75.0949H57.137L47.7724 75.0948L38.3643 65.6868V75.0949L19.5899 75.0948L19.5905 64.7918L13.8331 58.4137H21.6831V50.5637L28.1013 56.321H38.3631L19.5899 37.5473ZM57.137 75.0949V64.7918L51.3797 58.4137H59.2297V50.5637L65.6479 56.321H75.9108L57.1377 37.5483L57.137 37.547L47.7724 37.5473L38.3642 28.1392V37.5482H28.9552L38.3634 46.9564L38.3631 56.321H38.3643L57.137 75.0949ZM66.5019 0L75.9108 9.40889L75.9109 18.7744L57.1369 0H66.5019ZM38.3632 84.505L28.9543 75.0961H19.5893L38.3628 93.8696H28.1013L21.6831 88.1122V95.9622H13.8331L19.5905 102.34L19.5899 112.644L38.3643 112.643V103.236L47.7724 112.644H57.1373L75.9109 112.644V93.8698L75.9108 84.5054L66.5019 75.0966H57.1369L75.9109 93.8698H65.6479L59.2297 88.1125V95.9625H51.3797L57.137 102.341L57.1373 112.644L38.3643 93.8709V93.8696H38.3628L38.3632 84.505ZM75.9122 28.1382L85.3211 37.5471H94.6856V37.5483H94.6868L113.46 56.321H103.197L96.7785 50.5637V58.4137H88.9285L94.6858 64.7918V75.0941L75.9126 56.3209V65.6859L85.3215 75.0948L94.6858 75.0941L113.46 75.0949V56.321L113.46 46.9564L104.052 37.5483H113.46V18.7744H103.196L96.7783 13.0171V20.8671H88.9283L94.6856 27.2452V37.5471L75.9122 18.7733V28.1382ZM104.051 0L113.46 9.40889L113.46 18.7744L94.6859 0H104.051ZM75.9124 103.235L85.3213 112.644H94.6863L113.46 112.643V93.8699L113.46 84.5052L104.051 75.0963H94.6859L113.46 93.8699L103.196 93.8696L96.7783 88.1122V95.9622H88.9283L94.6856 102.34L94.6863 112.644L75.9124 93.8698V103.235Z">
+      </path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 113 113" id="pattern-line1-4">
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M13.365 0H6.68271V22.4332H13.365V0ZM0 22.4332H6.68225V45.1052H0V22.4332ZM0 67.5385H6.68225V89.9718H0V67.5385ZM105.485 0H112.167V22.4332H105.485V0ZM13.365 45.1052H6.68271V67.5385H13.365V45.1052ZM105.485 45.1052H112.167V67.5385H105.485V45.1052ZM13.365 89.9717H6.68271V112.644H13.365V89.9717ZM105.485 89.9717H112.167V112.644H105.485V89.9717ZM31.2637 22.4332H24.8201V45.1052H31.2637V67.5385H24.8201V89.9718H31.2637L31.263 112.644H37.9453V89.9717L31.2637 89.9718V67.5385H37.9453V45.1052H31.2637V22.4332ZM31.2637 22.4332L31.263 0H37.9453V22.4332H31.2637ZM49.4004 22.4332H56.0826V45.1052H49.4004V22.4332ZM56.0826 67.5385H49.4004V89.9718H56.0826V67.5385ZM56.0832 0H62.7654V22.4332H56.0832V0ZM62.7654 45.1052H56.0831V67.5385H62.7654V45.1052ZM56.0831 89.9717H62.7654V112.644H56.0831V89.9717ZM80.9028 22.4332H74.2205V45.1052H80.9028V22.4332ZM74.2205 67.5385H80.9028V89.9718H74.2205V67.5385ZM87.3466 0H80.903V22.4332H87.3466V0ZM80.9032 45.1052H87.3468V67.5385H80.9032V45.1052ZM87.3468 89.9717H80.9032V112.644H87.3468V89.9717ZM99.0406 22.4332H105.484V45.1052H99.0406V22.4332ZM105.484 67.5385H99.0406V89.9718H105.484V67.5385Z">
+      </path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 113 107" id="pattern-line2-1">
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M0 16.3517V0.0104997L8.42552e-07 0.010498L4.08168 7.9297L12.3687 2.77593L7.79229 16.3517H0ZM0 61.4005L8.42552e-07 45.0593L4.08168 52.9785L12.3687 47.8247L7.79229 61.4005H0ZM0 106.449L8.42552e-07 90.108L4.08168 98.0272L12.3687 92.8734L7.79229 106.449H0ZM112.644 67.5836V83.9249H104.851L100.275 70.3491L108.562 75.5028L112.644 67.5836ZM112.644 22.5349L108.562 30.4541L100.275 25.3003L104.851 38.8761H112.644V22.5349ZM37.2652 16.3517L32.6888 2.77593L40.9758 7.9297L45.0575 0.010498L49.1392 7.9297L57.4262 2.77593L52.8498 16.3517H37.2652ZM77.7462 2.77593L82.3227 16.3517H97.9072L102.484 2.77593L94.1966 7.9297L90.1149 0.010498L86.0333 7.9297L77.7462 2.77593ZM32.6888 47.8247L37.2652 61.4005H52.8498L57.4262 47.8247L49.1392 52.9785L45.0575 45.0593L40.9758 52.9785L32.6888 47.8247ZM82.3227 61.4005L77.7462 47.8247L86.0333 52.9785L90.1149 45.0593L94.1966 52.9785L102.484 47.8247L97.9072 61.4005H82.3227ZM37.2652 106.449L32.6888 92.8734L40.9758 98.0272L45.0575 90.108L49.1392 98.0272L57.4262 92.8734L52.8498 106.449H37.2652ZM77.7462 92.8734L82.3227 106.449H97.9072L102.484 92.8734L94.1966 98.0272L90.1149 90.108L86.0333 98.0272L77.7462 92.8734ZM14.7364 38.8761L10.16 25.3003L18.4471 30.4541L22.5287 22.5349L26.6104 30.4541L34.8975 25.3003L30.321 38.8761H14.7364ZM55.2175 25.3003L59.7939 38.8761H75.3785L79.9549 25.3003L71.6679 30.4541L67.5862 22.5349L63.5045 30.4541L55.2175 25.3003ZM10.16 70.3491L14.7364 83.9249H30.321L34.8975 70.3491L26.6104 75.5028L22.5287 67.5836L18.4471 75.5028L10.16 70.3491ZM59.7939 83.9249L55.2175 70.3491L63.5045 75.5028L67.5862 67.5836L71.6679 75.5028L79.9549 70.3491L75.3785 83.9249H59.7939Z">
+      </path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114 114" id="pattern-line2-2">
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M28.9746 9.88374L19.9991 0.908206L10.6283 0.908203L24.2893 14.5691L28.9746 9.88374ZM28.9746 19.2545L52.4014 42.6813L57.0868 37.9959L33.66 14.5691L28.9746 19.2545ZM61.7721 42.6813L57.0868 47.3666L80.5135 70.7934L85.1989 66.108L61.7721 42.6813ZM89.8842 70.7934L85.1989 75.4788L108.626 98.9056L113.311 94.2202L89.8842 70.7934ZM113.552 103.35L113.311 103.591L113.552 103.832V103.35ZM57.0867 9.88377L48.1112 0.908206H38.7405L52.4014 14.5691L57.0867 9.88377ZM57.0867 19.2545L80.5136 42.6813L85.1989 37.9959L61.7721 14.5691L57.0867 19.2545ZM89.8843 42.6813L85.1989 47.3667L108.626 70.7934L113.311 66.108L89.8843 42.6813ZM113.552 75.238L113.311 75.4787L113.552 75.7195V75.238ZM85.1988 9.88372L76.2233 0.90821H66.8526L80.5135 14.5691L85.1988 9.88372ZM85.1989 19.2545L108.626 42.6813L113.311 37.996L89.8842 14.5691L85.1989 19.2545ZM113.552 47.126L113.311 47.3667L113.552 47.6073V47.126ZM108.626 14.5692L94.9648 0.908213H104.336L113.311 9.8838L108.626 14.5692ZM113.552 19.0138L113.311 19.2545L113.552 19.4952V19.0138ZM0.908088 47.321L5.54779 42.6813L28.9745 66.108L24.2892 70.7934L0.908088 47.4123V47.321ZM28.9745 75.4788L52.4014 98.9056L57.0867 94.2202L33.6599 70.7934L28.9745 75.4788ZM61.7721 98.9056L57.0867 103.591L67.0477 113.552H76.4184L61.7721 98.9056ZM0.908084 75.4332V75.5245L24.2892 98.9056L28.9746 94.2202L5.54779 70.7935L0.908084 75.4332ZM33.66 98.9056L28.9746 103.591L38.9355 113.552H48.3062L33.66 98.9056ZM5.5478 14.5691L28.9746 37.9959L24.2892 42.6813L0.908091 19.3001V19.2088L5.5478 14.5691ZM28.9746 47.3666L52.4014 70.7935L57.0868 66.1081L33.66 42.6813L28.9746 47.3666ZM57.0868 75.4788L61.7721 70.7935L85.1989 94.2203L80.5136 98.9056L57.0868 75.4788ZM85.1989 103.591L89.8843 98.9056L104.531 113.552H95.1598L85.1989 103.591ZM0.908081 103.612V103.637L10.8233 113.552H20.194L5.58096 98.9388L0.908081 103.612Z">
+      </path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114 114" id="pattern-line2-3">
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M113.46 0.908203L99.1449 4.99815L109.37 15.223L113.46 0.908203ZM113.46 50.0727L99.1449 54.1626L109.37 64.3874L113.46 50.0727ZM99.1449 103.327L113.46 99.2371L109.37 113.552L99.1449 103.327ZM113.46 25.4904L99.1449 29.5804L109.37 39.8052L113.46 25.4904ZM99.1449 78.7448L113.46 74.6549L109.37 88.9697L99.1449 78.7448ZM64.2953 99.2371L49.9805 103.327L60.2053 113.552L64.2953 99.2371ZM49.9805 29.5804L64.2953 25.4904L60.2053 39.8052L49.9805 29.5804ZM64.2953 74.6549L49.9805 78.7448L60.2053 88.9697L64.2953 74.6549ZM74.5627 4.99816L88.8775 0.908222L84.7876 15.223L74.5627 4.99816ZM88.8775 50.0727L74.5627 54.1626L84.7876 64.3874L88.8775 50.0727ZM74.5627 103.327L88.8775 99.2371L84.7876 113.552L74.5627 103.327ZM88.8775 25.4904L74.5627 29.5804L84.7876 39.8052L88.8775 25.4904ZM74.5627 78.7448L88.8775 74.6549L84.7876 88.9697L74.5627 78.7448ZM39.7131 0.90822L25.3983 4.99816L35.6231 15.223L39.7131 0.90822ZM25.3983 54.1626L39.7131 50.0727L35.6231 64.3874L25.3983 54.1626ZM39.7131 99.2371L25.3983 103.327L35.6231 113.552L39.7131 99.2371ZM25.3983 29.5804L39.7131 25.4904L35.6231 39.8052L25.3983 29.5804ZM39.7131 74.6549L25.3983 78.7448L35.6231 88.9697L39.7131 74.6549ZM0.81604 4.99816L15.1308 0.908219L11.0409 15.223L0.81604 4.99816ZM15.1308 50.0727L0.816047 54.1626L11.0409 64.3874L15.1308 50.0727ZM0.81604 103.327L15.1308 99.2371L11.0409 113.552L0.81604 103.327ZM15.1308 25.4904L0.816047 29.5804L11.0409 39.8052L15.1308 25.4904ZM0.81604 78.7448L15.1308 74.6549L11.0409 88.9697L0.81604 78.7448ZM63.4614 1.99557L49.2848 6.04603L59.4109 16.1722L63.4614 1.99557ZM63.4614 50.6854L49.2848 54.7359L59.4109 64.862L63.4614 50.6854Z">
+      </path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 113 113" id="pattern-line2-4">
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M29.3286 6.31914e-06H38.3518L33.8402 4.51159L29.3286 6.31914e-06ZM56.0214 0L56.0212 0.000181991L56.021 1.39021e-05L51.3357 4.68537L51.3358 4.68554L46.6506 9.37081L46.6504 9.3707L41.9651 14.0561L51.3359 23.4268L56.0212 28.1121L56.0212 28.1122L60.7065 23.4268L70.0773 14.0561L65.392 9.37074L65.3919 9.37084L60.7065 4.68554L60.7067 4.68536L56.0214 0ZM14.0559 18.7415L9.37062 14.0562L14.0559 9.3709L18.7412 14.0562L14.0559 18.7415ZM0 14.0563L9.37058 23.4268L14.0559 28.1121L14.0559 28.1122L28.112 14.0561L23.4267 9.37074L23.4266 9.37084L18.7413 4.68554L18.7414 4.68536L14.0561 0L14.0559 0.000179042L14.0557 1.39021e-05L9.37037 4.68537L9.37054 4.68554L4.68526 9.37081L4.68515 9.3707L0 14.0559V14.0563ZM0 38.7935V29.7704L4.51158 34.2819L0 38.7935ZM0 56.4632L4.68536 61.1485L9.37058 65.8338L14.0559 70.5192L14.0559 70.5192L18.7412 65.8338L28.112 56.4631L23.4267 51.7778L23.4266 51.7779L18.7413 47.0926L18.7414 47.0924L14.0561 42.4071L14.0559 42.4072L14.0557 42.407L9.37037 47.0924L9.37057 47.0926L4.68529 51.7779L4.68515 51.7777L0 56.4629V56.4632ZM0 82.9675V73.9444L4.51158 78.4559L0 82.9675ZM0 98.4285V98.4282L4.68515 93.743L4.68529 93.7432L9.37057 89.0579L9.37037 89.0577L14.0557 84.3723L14.0559 84.3725L14.0561 84.3724L18.7414 89.0577L18.7413 89.0579L23.4266 93.7432L23.4267 93.7431L28.112 98.4284L28.1118 98.4284L23.4264 103.114L18.7412 107.799L18.6713 107.869L14.0559 112.484L9.37058 107.799L4.68536 103.114L0 98.4285ZM4.24362 112.644H0V108.4L4.24362 112.644ZM38.2576 112.644H29.4228L33.8402 108.226L38.2576 112.644ZM83.3151 112.644H74.4803L78.8977 108.226L83.3151 112.644ZM112.644 108.4V112.644H108.052L112.47 108.226L112.644 108.4ZM112.644 73.9444V82.9675L112.47 83.1413L107.785 78.4559L112.47 73.7706L112.644 73.9444ZM112.644 29.7704V38.7935L112.47 38.9673L107.785 34.2819L112.47 29.5966L112.644 29.7704ZM107.958 6.31914e-06H112.644V4.3378L112.47 4.51159L107.958 6.31914e-06ZM74.3861 6.31914e-06H83.4092L78.8977 4.51159L74.3861 6.31914e-06ZM98.4284 0L103.114 4.68536L103.114 4.68554L107.799 9.37074L112.484 14.0561L112.484 14.0561L107.799 18.7415L103.114 23.4268L98.4283 28.1122L98.4282 28.1121L93.7429 23.4268L84.3721 14.0561L89.0575 9.3707L89.0576 9.37082L93.7429 4.68554L93.7427 4.68537L98.4281 1.39021e-05L98.4282 0.000181991L98.4284 0ZM4.3378 6.31914e-06H0V4.33781L4.3378 6.31914e-06ZM18.7412 56.4632L14.0559 61.1485L9.37065 56.4632L14.0559 51.778L18.7412 56.4632ZM14.0559 103.114L9.37065 98.4285L14.0559 93.7432L18.7412 98.4285L14.0559 103.114ZM60.7065 14.0562L56.0212 18.7415L51.3359 14.0562L56.0212 9.3709L60.7065 14.0562ZM65.3919 51.7779L65.392 51.7778L70.0773 56.4631L60.7065 65.8338L56.0212 70.5192L56.0212 70.5192L51.3359 65.8338L46.6507 61.1485L41.9653 56.4632L41.9651 56.4631L46.6504 51.7777L46.6506 51.7779L51.3359 47.0926L51.3357 47.0924L56.021 42.407L56.0212 42.4072L56.0214 42.4071L60.7067 47.0924L60.7066 47.0926L65.3919 51.7779ZM60.7065 56.4632L56.0212 61.1485L51.3359 56.4632L56.0212 51.778L60.7065 56.4632ZM65.3917 103.114L70.0771 98.4284L70.0773 98.4284L65.392 93.7431L65.3919 93.7432L60.7066 89.0579L60.7067 89.0577L56.0214 84.3724L56.0212 84.3725L56.021 84.3723L51.3357 89.0577L51.3359 89.0579L46.6506 93.7432L46.6504 93.743L41.9651 98.4284L41.9653 98.4285L46.6507 103.114L51.3359 107.799L56.0212 112.484L60.7065 107.799L65.3917 103.114ZM56.0212 103.114L51.3359 98.4285L56.0212 93.7432L60.7065 98.4285L56.0212 103.114ZM103.114 14.0562L98.4282 18.7415L93.7429 14.0562L98.4282 9.3709L103.114 14.0562ZM107.799 61.1485L112.484 56.4631L107.799 51.7778L103.114 47.0926L103.114 47.0924L98.4284 42.4071L98.4282 42.4072L98.4281 42.407L93.7427 47.0924L93.7429 47.0926L89.0576 51.7779L89.0575 51.7777L84.3721 56.4631L84.3723 56.4632L89.0577 61.1485L93.7429 65.8338L98.4282 70.5192L98.4283 70.5192L103.114 65.8338L107.799 61.1485ZM98.4282 61.1485L93.743 56.4632L98.4282 51.778L103.114 56.4632L98.4282 61.1485ZM107.799 103.114L112.484 98.4284L107.799 93.7431L103.114 89.0579L103.114 89.0577L98.4284 84.3724L98.4282 84.3725L98.4281 84.3723L93.7427 89.0577L93.7429 89.0579L89.0576 93.7432L89.0575 93.743L84.3721 98.4284L84.3723 98.4285L89.0577 103.114L93.7429 107.799L98.4283 112.484L103.114 107.799L107.799 103.114ZM98.4282 103.114L93.743 98.4285L98.4282 93.7432L103.114 98.4285L98.4282 103.114ZM38.5256 34.2819L33.8402 29.5966L29.1548 34.2819L33.8402 38.9673L38.5256 34.2819ZM33.8402 73.7706L38.5256 78.4559L33.8402 83.1413L29.1548 78.4559L33.8402 73.7706ZM83.583 34.2819L78.8977 29.5966L74.2123 34.2819L78.8977 38.9673L83.583 34.2819ZM78.8977 73.7706L83.583 78.4559L78.8977 83.1413L74.2123 78.4559L78.8977 73.7706Z">
+      </path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 113 114" id="pattern-line3-1">
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M36.046 0.816162H26.6753L45.0575 19.1984L63.4397 0.816162H54.069L45.0575 9.82766L36.046 0.816162ZM81.1035 0.816162H71.7327L90.1149 19.1984L108.497 0.816162H99.1264L90.1149 9.82766L81.1035 0.816162ZM112.644 15.3716L90.1149 37.9004L67.5862 15.3716L45.0575 37.9004L22.5287 15.3716L0 37.9004V47.2711L22.5287 24.7423L45.0575 47.2711L67.5862 24.7423L90.1149 47.2711L112.644 24.7423V15.3716ZM112.644 43.5545L90.1149 66.0833L67.5862 43.5545L45.0575 66.0833L22.5287 43.5545L0 66.0833V75.454L22.5287 52.9253L45.0575 75.454L67.5862 52.9253L90.1149 75.454L112.644 52.9253V43.5545ZM112.644 71.6492L90.1149 94.1779L67.5862 71.6492L45.0575 94.1779L22.5287 71.6492L0 94.1779V103.549L22.5287 81.0199L45.0575 103.549L67.5862 81.0199L90.1149 103.549L112.644 81.0199V71.6492ZM112.644 100.097L99.2811 113.46H108.652L112.644 109.468V100.097ZM71.5781 113.46H80.9488L67.5862 100.097L54.2236 113.46H63.5943L67.5862 109.468L71.5781 113.46ZM26.5206 113.46H35.8913L22.5287 100.097L9.16614 113.46H18.5369L22.5287 109.468L26.5206 113.46ZM0 19.1984L18.3822 0.816162H9.01149L0 9.82766V19.1984Z">
+      </path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114 114" id="pattern-line3-2">
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M80.3644 19.7247L94.4205 33.7808L89.7351 38.4661L75.679 24.4101L80.3644 19.7247ZM38.1961 90.0051L24.14 75.9491L19.4547 80.6344L33.5108 94.6905L38.1961 90.0051ZM113.552 6.05844V0.816162H108.309L113.552 6.05844ZM80.1973 0.816162H89.568L94.4205 5.6686L89.7351 10.354L80.1973 0.816162ZM52.0851 0.816162H61.4559L66.3083 5.6686L61.6229 10.354L52.0851 0.816162ZM23.973 0.816162H33.3437L38.1961 5.6686L33.5108 10.354L23.973 0.816162ZM0.908081 5.86345V0.816162H5.23151L10.084 5.6686L5.39859 10.354L0.908081 5.86345ZM0.908081 33.9756V24.6049L10.084 33.7808L5.39859 38.4661L0.908081 33.9756ZM0.908081 62.0878V52.7171L10.084 61.8929L5.39859 66.5783L0.908081 62.0878ZM0.908081 80.8292L10.084 90.0051L5.39859 94.6905L0.908081 90.2V80.8292ZM5.4267 113.46H0.908081V108.941L5.4267 113.46ZM33.5389 113.46H24.1682L19.4547 108.746L24.14 104.061L33.5389 113.46ZM61.651 113.46H52.2803L47.5669 108.746L52.2522 104.061L61.651 113.46ZM89.7632 113.46H80.3925L75.679 108.746L80.3644 104.061L89.7632 113.46ZM113.552 109.136V113.46H108.505L103.791 108.746L108.477 104.061L113.552 109.136ZM113.552 81.0242V90.395L103.791 80.6344L108.477 75.9491L113.552 81.0242ZM113.552 52.9121V62.2828L103.791 52.5222L108.477 47.8369L113.552 52.9121ZM113.552 24.7999V34.1706L103.791 24.4101L108.477 19.7247L113.552 24.7999ZM66.3083 61.8929L52.2522 47.8369L47.5669 52.5222L61.6229 66.5783L66.3083 61.8929ZM80.3644 47.8369L94.4205 61.8929L89.7351 66.5783L75.679 52.5222L80.3644 47.8369ZM66.3083 90.0051L52.2522 75.9491L47.5669 80.6344L61.6229 94.6905L66.3083 90.0051ZM94.4205 90.0051L80.3644 75.9491L75.679 80.6344L89.7351 94.6905L94.4205 90.0051ZM38.1961 33.7808L24.14 19.7247L19.4547 24.4101L33.5108 38.4661L38.1961 33.7808ZM52.2522 19.7247L66.3083 33.7808L61.6229 38.4661L47.5669 24.4101L52.2522 19.7247ZM38.1961 61.8929L24.14 47.8369L19.4547 52.5222L33.5108 66.5783L38.1961 61.8929ZM89.735 47.8369L103.791 33.7808L108.476 38.4662L94.4203 52.5222L89.735 47.8369ZM47.5667 90.0049L33.5106 104.061L38.196 108.746L52.2521 94.6903L47.5667 90.0049ZM75.6789 61.893L61.6228 75.9491L66.3082 80.6344L80.3642 66.5783L75.6789 61.893ZM89.735 75.9491L103.791 61.893L108.476 66.5783L94.4203 80.6344L89.735 75.9491ZM75.6789 90.0049L61.6228 104.061L66.3082 108.746L80.3642 94.6903L75.6789 90.0049ZM19.4545 5.66863L5.39845 19.7247L10.0838 24.4101L24.1399 10.354L19.4545 5.66863ZM33.5106 19.7247L47.5667 5.66863L52.2521 10.354L38.196 24.4101L33.5106 19.7247ZM19.4545 33.7808L5.39845 47.8369L10.0838 52.5222L24.1399 38.4662L19.4545 33.7808ZM103.791 90.0049L89.735 104.061L94.4203 108.746L108.476 94.6903L103.791 90.0049ZM61.6228 19.7247L75.6789 5.66863L80.3642 10.354L66.3082 24.4101L61.6228 19.7247ZM19.4545 61.893L5.39845 75.9491L10.0838 80.6344L24.1399 66.5783L19.4545 61.893ZM47.5667 33.7808L33.5106 47.8369L38.196 52.5222L52.2521 38.4662L47.5667 33.7808ZM61.6228 47.8369L75.6789 33.7808L80.3642 38.4662L66.3082 52.5222L61.6228 47.8369ZM19.4545 90.0049L5.39845 104.061L10.0838 108.746L24.1399 94.6903L19.4545 90.0049ZM89.735 19.7247L103.791 5.66863L108.476 10.354L94.4203 24.4101L89.735 19.7247ZM47.5667 61.893L33.5106 75.9491L38.196 80.6344L52.2521 66.5783L47.5667 61.893Z">
+      </path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114 114" id="pattern-line3-3">
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M24.4381 113.46L0.81604 89.8378V99.2085L15.0674 113.46H24.4381ZM43.1795 113.46L0.81604 71.0963V61.7256L52.5503 113.46H43.1795ZM113.46 89.8377L89.8376 113.46H99.2083L113.46 99.2084V89.8377ZM113.46 71.0963L71.0961 113.46H61.7254L113.46 61.7255V71.0963ZM89.8377 0.816162L113.46 24.4382V15.0675L99.2084 0.816162H89.8377ZM71.0966 0.816162L113.46 43.1792V52.5499L61.7259 0.816162H71.0966ZM43.179 0.816162L0.81604 43.1792V52.5499L52.5497 0.816162H43.179ZM24.4378 0.816162L0.81604 24.4379V15.0672L15.0671 0.816162H24.4378ZM56.2008 98.3689L52.4525 94.6206L14.9696 57.1378L15.9067 56.2007L19.655 52.4524L52.4525 19.6549L56.2008 15.9066L57.1378 14.9695L94.6207 52.4524L98.369 56.2007L99.3061 57.1378L57.1378 99.306L56.2008 98.3689ZM89.9354 57.1377L57.1378 89.9352L24.3403 57.1377L57.1378 24.3402L89.9354 57.1377ZM66.5086 61.8231L71.1939 57.1377L66.5086 52.4524L61.8232 47.767L57.1378 43.0817L52.4525 47.767L47.7671 52.4524L43.0818 57.1378L47.7671 61.8231L52.4525 66.5085L57.1378 71.1938L61.8232 66.5085L66.5086 61.8231ZM57.1378 52.4524L52.4525 57.1378L57.1378 61.8231L61.8232 57.1378L57.1378 52.4524Z">
+      </path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 112 112" id="pattern-line3-4">
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M6.68225 0H0V6.68225V15.9896H6.68225V6.68225H15.9897V0H6.68225ZM30.5474 0H39.8549V6.68225H30.5474V15.9896H23.8652L23.8653 0H30.5474ZM54.4126 6.68225H63.7202V0H54.4126H47.7305L47.7304 15.9896H54.4126V6.68225ZM78.2781 0H87.5855V6.68225H78.2781V15.9896H71.5958V6.68225V0H78.2781ZM102.143 6.68225H111.451V0H102.143H95.4611L95.4611 6.68225V15.9896H102.143V6.68225ZM0 39.8549V30.5474V23.8652H6.68225L15.9897 23.8651V30.5474H6.68225V39.8549H0ZM30.5474 23.8652L39.8549 23.8651V30.5474H30.5474V39.8549H23.8652L23.8653 23.8651L30.5474 23.8652ZM54.4126 30.5474H63.7202V23.8651L54.4126 23.8652L47.7305 23.8651L47.7304 39.8549H54.4126V30.5474ZM78.2781 23.8651H87.5855V30.5474H78.2781V39.8549H71.5958V30.5474V23.8651H78.2781ZM102.143 30.5474H111.451V23.8651H102.143H95.4611L95.4611 30.5474V39.8549H102.143V30.5474ZM0 63.72V54.4124V47.7303L15.9897 47.7301V54.4124H6.68225V63.72H0ZM23.8653 47.7301H39.8549V54.4124H30.5474V63.72H23.8652L23.8653 47.7301ZM54.4126 54.4124H63.7202V47.7301H47.7305L47.7304 63.72H54.4126V54.4124ZM78.2781 47.7301H87.5855V54.4124H78.2781V63.7198H71.5958V54.4124V47.7301H78.2781ZM102.143 54.4124H111.451V47.7301H102.143H95.4611L95.4611 54.4124V63.7198H102.143V54.4124ZM0 87.3463V78.2776V71.5953H6.68225H15.9897V78.2776H6.68225V87.3463H0ZM30.5475 71.5953H39.8549V78.2776H30.5475V87.3463H23.8653V78.2776V71.5953H30.5475ZM63.7202 71.5953H54.4128H47.7305V78.2776V87.3463H54.4128V78.2776H63.7202V71.5953ZM78.2781 71.5953H87.5855V78.2776H78.2781V87.3463H71.5958V78.2776V71.5953H78.2781ZM95.4611 71.5953L95.4611 78.2776V87.3463H102.143V78.2776H111.451V71.5953H102.143H95.4611ZM0 111.211V102.143V95.4603H6.68225H15.9897V102.143H6.68225V111.211H0ZM30.5475 95.4603H39.8549V102.143H30.5475V111.211H23.8653V102.143V95.4603H30.5475ZM63.7202 95.4603H54.4128H47.7305V102.143V111.211H54.4128V102.143H63.7202V95.4603ZM78.2781 95.4603H87.5855V102.143H78.2781V111.211H71.5958V102.143V95.4603H78.2781ZM95.4611 95.4603L95.4611 102.143V111.211H102.143V102.143H111.451V95.4603H102.143H95.4611Z">
+      </path>
+    </symbol>
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47 52" id="map-ico">
+      <path opacity="0.7"
+        d="M47 42.8125C47 47.625 18.5 52 18.5 52C18.5 52 18.5 47.4062 18.5 42.8125C18.5 40.1546 24.335 38 34 38C43.665 38 47 40.1546 47 42.8125Z"
+        fill="black"></path>
+      <path
+        d="M36 17.875C36 35.75 18 52 18 52C18 52 0 34.9375 0 17.875C0 8.00291 8.05887 0 18 0C27.9411 0 36 8.00291 36 17.875Z"
+        fill="white"></path>
+      <path
+        d="M8 10.4538L9.24789 14.0963H13.4975L14.7453 10.4538L12.4857 11.8366L11.3727 9.71179L10.2597 11.8366L8 10.4538Z"
+        fill="black"></path>
+      <path
+        d="M8 25.8669L9.24789 29.5093H13.4975L14.7453 25.8669L12.4857 27.2497L11.3727 25.1249L10.2597 27.2497L8 25.8669Z"
+        fill="black"></path>
+      <path
+        d="M21.2546 10.4538L22.5025 14.0963H26.7521L28 10.4538L25.7403 11.8366L24.6273 9.71179L23.5143 11.8366L21.2546 10.4538Z"
+        fill="black"></path>
+      <path
+        d="M21.2546 25.8669L22.5025 29.5093H26.7521L28 25.8669L25.7403 27.2497L24.6273 25.1249L23.5143 27.2497L21.2546 25.8669Z"
+        fill="black"></path>
+      <path
+        d="M14.7117 18.3121L15.9596 21.9545H20.2091L21.457 18.3121L19.1973 19.6949L18.0843 17.5701L16.9714 19.6949L14.7117 18.3121Z"
+        fill="black"></path>
+    </symbol>
+  </svg>
+
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  
+
+ <script type="text/javascript">
+  ymaps.ready(init);		
+  
+  function init() {
+    var myMap = new ymaps.Map("map", {
+      center: [41.028397,28.971935],
+      zoom: 15,
+      
+      controls: []
+    }, {
+      searchControlProvider: 'yandex#search'
+    });
+    
+    var myPlacemark = new ymaps.Placemark([41.028397,28.971935], null,{
+      iconLayout: 'default#image',
+      iconImageHref: "../img/map-ico.svg",
+      iconImageSize: [47, 52],
+    });
+    myMap.geoObjects.add(myPlacemark);
+  }
+
+  </script> 
+
+
+</body>
+
+</html>
