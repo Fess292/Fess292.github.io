@@ -728,8 +728,8 @@ ul {
     max-width: 100vw;
     height: 100vh;
     max-height: 100vh;
-    grid-template-columns: repeat(2, 50%);
-    padding: 1.1235955056vh;
+    grid-template-columns: repeat(2, calc(50vw - 0.9325842697vh));
+    padding: 0.9325842697vh;
     padding-right: 0;
   }
   .page-promo .header, .page-contacts .header {
@@ -739,12 +739,12 @@ ul {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    height: 45.35px;
+    height: 38.95px;
   }
   .page-promo .left, .page-contacts .left {
     padding: 0;
     margin: 0;
-    padding: 4.4943820225vh;
+    padding: 4.1011235955vh;
     padding-right: 0;
     padding-right: 0;
     grid-column: 1/2;
@@ -770,6 +770,9 @@ ul {
     grid-template-rows: repeat(8, 11.2359550562vh);
     gap: 1.1235955056vh;
   }
+  .page-promo .header .container {
+    height: 32.95px;
+  }
   .page-promo .promo {
     width: 762px;
     margin: 0;
@@ -786,7 +789,7 @@ ul {
     width: 604px;
   }
   .page-promo .promo .button {
-    margin-top: 33px;
+    margin-top: 31px;
   }
   .page-promo .promo .button .button-content {
     font-size: 18px;
@@ -822,6 +825,7 @@ ul {
   .page-promo .footer {
     margin: 0;
     padding: 0;
+    height: 51px;
   }
   .page-promo .footer div, .page-promo .footer a {
     font-size: 15px;
@@ -838,10 +842,15 @@ ul {
   }
   .page-promo .footer__tel {
     margin: 0;
+    left: 14px;
+    position: relative;
+    top: 9px;
     line-height: 20px;
   }
   .page-promo .footer__mail {
-    right: 0;
+    position: relative;
+    right: -58px;
+    top: 9px;
     line-height: 20px;
   }
   .button {
@@ -849,7 +858,7 @@ ul {
   }
   .button--toContacts {
     width: 355px;
-    padding: 0 24.9px 0 38px;
+    padding: 0 27.5px 0 33px;
   }
   .button--toContacts::before {
     right: 60px;
@@ -870,6 +879,13 @@ ul {
             transform: translateX(-50%);
     background: #000;
     z-index: -100;
+  }
+  .page-contacts .header .container {
+    height: 48.95px;
+  }
+  .page-contacts .header__logo-text {
+    margin-top: 6px;
+    margin-left: 0px;
   }
   .page-contacts .info {
     margin-top: 54.89px;
