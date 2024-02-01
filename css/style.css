@@ -472,12 +472,13 @@ ul {
     width: 150px;
   }
   .page-promo .patterns-mob__grid, .page-contacts .patterns-mob__grid {
-    grid-template-columns: repeat(6, 60.06px);
-    grid-template-rows: repeat(2, 60.06px);
+    grid-template-columns: repeat(6, 14.5vw);
+    grid-template-rows: repeat(2, 14.5vw);
   }
 }
 @media screen and (min-width: 1230px) {
   .container {
+    max-width: 100%;
     width: 1194px;
     padding: 0;
   }
@@ -536,16 +537,19 @@ ul {
     margin-top: -21px;
   }
   .page-promo {
-    padding-top: 20px;
+    padding-top: 29px;
   }
   .page-promo .right {
-    margin-left: -1px;
+    margin-left: 1px;
+  }
+  .page-promo .header .container {
+    height: 68px;
   }
   .page-promo .patterns-web__grid svg {
     fill: #000;
   }
   .page-promo .promo {
-    margin-top: 62px;
+    margin-top: 67px;
     width: 412px;
   }
   .page-promo .promo__descr {
@@ -555,7 +559,7 @@ ul {
     margin-right: 93px;
   }
   .page-promo .footer {
-    margin-top: 86px;
+    margin-top: 72px;
   }
   .page-promo .footer .container {
     grid-template-columns: repeat(2, auto);
@@ -626,6 +630,20 @@ ul {
     display: grid;
     padding-top: 26px;
     padding-bottom: 0;
+    position: relative;
+  }
+  .page-contacts::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    background: #000;
+    z-index: -100;
   }
   .page-contacts .patterns-web__grid svg {
     fill: #fff;
@@ -678,7 +696,7 @@ ul {
     margin-right: 11px;
   }
   .page-contacts .map {
-    margin-top: 47px;
+    margin-top: 33px;
     margin-left: -40px;
     width: 589px;
     height: 362px;
@@ -871,19 +889,6 @@ ul {
   .page-contacts {
     z-index: 100;
     position: relative;
-  }
-  .page-contacts::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100vw;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
-    background: #000;
-    z-index: -100;
   }
   .page-contacts .header .container {
     height: 48.95px;
