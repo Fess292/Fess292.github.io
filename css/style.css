@@ -463,12 +463,17 @@ ul {
   display: none !important;
 }
 
-@media screen and (min-width: 360px) and (max-width: 414px) {
+@media screen and (min-width: 360px) and (max-width: 413px) {
   .container {
-    width: 360px;
+    width: 100%;
+    padding: 0 10px;
   }
   .footer__tel {
     width: 150px;
+  }
+  .page-promo .patterns-mob__grid, .page-contacts .patterns-mob__grid {
+    grid-template-columns: repeat(6, 60.06px);
+    grid-template-rows: repeat(2, 60.06px);
   }
 }
 @media screen and (min-width: 1230px) {
