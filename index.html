@@ -10,14 +10,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,600&display=swap"
     rel="stylesheet">
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+  <script type="text/javascript" src="https://dadbab.info/content/shared/js/jquery-1.12.4.min.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>-->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>-->
   <!-- <script src="https://api-maps.yandex.ru/v3/?apikey=c72cc6f9-889b-4073-bdde-3c3a8d2715f8&lang=ru_RU"></script> -->
   
   <!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9adbca7b42f31ecd53b46701ffb2b38e8cf9d5fde80ed89cae832834377323a7&amp;width=940&amp;height=591&amp;lang=ru_RU&amp;scroll=true"></script> -->
-  <script type="text/javascript" src="https://dadbab.info/content/shared/js/jquery-1.12.4.min.js"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
   <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
 
@@ -26,7 +26,7 @@
 
 <body>
   <div class="wrapper container-fluid" id="pinn">
-    <section id="page-promo" class="page-promo layer">
+    <section id="page-promo" class="active page-promo layer">
       <div class="left">
         <header id="header--promo" class="header header--promo">
           <div class="container">
@@ -120,15 +120,34 @@
               производителей по всему миру
             </p>
             <button class="button button--toContacts" onclick="showContacts()">
-              <span class="button-content">
-                Контактная информация
-              </span>
-              <svg class="arrow">
-                <use xlink:href="#arrow"></use>
-              </svg>
-              <svg class="mouse">
-                <use xlink:href="#mouse-scroll"></use>
-              </svg>
+              <div class="button__mask">
+                <div class="white">
+                  <div class="white__box">
+                    <span class="button-content">
+                      Контактная информация
+                    </span>
+                    <svg class="arrow">
+                      <use xlink:href="#arrow"></use>
+                    </svg>
+                    <svg class="mouse">
+                      <use xlink:href="#mouse-scroll"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="black">
+                  <div class="black__box">
+                    <span class="button-content">
+                      Контактная информация
+                    </span>
+                    <svg class="arrow">
+                      <use xlink:href="#arrow"></use>
+                    </svg>
+                    <svg class="mouse">
+                      <use xlink:href="#mouse-scroll"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
             </button>
             <ul class="promo__list">
               <li>
@@ -586,7 +605,7 @@
       <!-- <div class="pattern"></div> -->
     </section>
 
-    <section id="page-contacts" class="page-contacts layer">
+    <section id="page-contacts" class="preactive page-contacts layer">
       <div class="left">
         <header id="header--contacts" class="header header--contacts">
           <div class="container">
@@ -1102,7 +1121,6 @@
   </div>
   <!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script> -->
 
-  <script src="js/main.js"></script>
   <svg width="0" height="0" class="hidden">
     <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 9" id="arrow">
       <path
@@ -1309,10 +1327,10 @@
     </symbol>
   </svg>
 
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-  
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script src="js/main.js"></script>
 
- <script type="text/javascript">
+<script type="text/javascript">
   ymaps.ready(init);		
   
   function init() {
@@ -1327,13 +1345,13 @@
     
     var myPlacemark = new ymaps.Placemark([41.028397,28.971935], null,{
       iconLayout: 'default#image',
-      iconImageHref: "../img/map-ico.svg",
-      iconImageSize: [47, 52],
+      iconImageHref: "img/map-ico.svg",
+      iconImageSize: [47, 52]
     });
     myMap.geoObjects.add(myPlacemark);
   }
 
-  </script> 
+</script>
 
 
 </body>
