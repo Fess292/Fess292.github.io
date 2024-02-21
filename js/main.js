@@ -1,4 +1,4 @@
-$(".button--toContacts").click(function () { // ID откуда кливаем
+/*$(".button--toContacts").click(function () { // ID откуда кливаем
   $('html, body').animate({
     scrollTop: $(".page-contacts").offset().top  // класс объекта к которому приезжаем
   }, 700); // Скорость прокрутки
@@ -8,7 +8,7 @@ $(".button--toPromo").click(function () { // ID откуда кливаем
   $('html, body').animate({
     scrollTop: $(".page-promo").offset().top  // класс объекта к которому приезжаем
   }, 700); // Скорость прокрутки
-});
+});*/
 
 // закрепленная шапка
 document.addEventListener("DOMContentLoaded", function () {
@@ -135,7 +135,7 @@ function showContacts() {
   } else if (window.innerWidth >= 1230 && window.innerWidth < 1600) {
     document.getElementById('page-contacts').style.display = 'grid';
     document.getElementById('page-promo').style.display = 'grid';
-  } 
+  }
 
   // Скрыть блок #page-promo
   // document.getElementById('page-promo').style.display = 'none';
@@ -203,34 +203,23 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
 
-    function toggleAnimation() {
+    function toggleAnimation(visibleIndices) {
       columns.forEach(column => {
         if (column) {
-          const visibleIndices = [];
+          column.forEach((pattern, index) => {
+            if (pattern) {
+              const shouldBeVisible = visibleIndices.includes(index);
+              const isVisible = pattern.classList && pattern.classList.contains('visible');
 
-          while (visibleIndices.length < 2) {
-            const randomIndex = Math.floor(Math.random() * column.length);
-            if (!visibleIndices.includes(randomIndex)) {
-              visibleIndices.push(randomIndex);
-            }
-          }
-
-          setTimeout(() => {
-            column.forEach((pattern, index) => {
-              if (pattern) {
-                const shouldBeVisible = visibleIndices.includes(index);
-                const isVisible = pattern.classList && pattern.classList.contains('visible');
-
-                if (shouldBeVisible && !isVisible) {
-                  pattern.classList && pattern.classList.add && pattern.classList.add('visible');
-                } else if (!shouldBeVisible && isVisible) {
-                  pattern.classList && pattern.classList.remove && pattern.classList.remove('visible');
-                } else if (!isVisible && !shouldBeVisible) {
-                  pattern.classList && pattern.classList.add && pattern.classList.add('visible');
-                }
+              if (shouldBeVisible && !isVisible) {
+                pattern.classList && pattern.classList.add && pattern.classList.add('visible');
+              } else if (!shouldBeVisible && isVisible) {
+                pattern.classList && pattern.classList.remove && pattern.classList.remove('visible');
+              } else if (!isVisible && !shouldBeVisible) {
+                pattern.classList && pattern.classList.add && pattern.classList.add('visible');
               }
-            });
-          }, 0);
+            }
+          });
         }
       });
     }
@@ -241,28 +230,23 @@ document.addEventListener("DOMContentLoaded", function () {
       setInitialVisibility();
 
       if (currentVisiblePattern !== null) {
-        columns.forEach(column => {
-          column.forEach((pattern, index) => {
-            if (pattern) {
-              const isVisible = pattern.classList && pattern.classList.contains('visible');
-              const shouldBeVisible = currentVisiblePattern === pattern;
+        const visibleIndices = [];
 
-              if (isVisible && !shouldBeVisible) {
-                pattern.classList && pattern.classList.remove && pattern.classList.remove('visible');
-              } else if (!isVisible && shouldBeVisible) {
-                pattern.classList && pattern.classList.add && pattern.classList.add('visible');
-              }
-            }
-          });
-        });
+        while (visibleIndices.length < 2) {
+          const randomIndex = Math.floor(Math.random() * 8);
+          if (!visibleIndices.includes(randomIndex)) {
+            visibleIndices.push(randomIndex);
+          }
+        }
+
+        toggleAnimation(visibleIndices);
       }
 
-      toggleAnimation();
+      currentVisiblePattern = currentVisiblePattern === null ? 0 : (currentVisiblePattern + 1) % 8;
     }, 600);
 
     window.addEventListener('resize', function () {
       setInitialVisibility();
-      toggleAnimation();
     });
   }
 
@@ -272,75 +256,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// magic скролл----------------------------
-var scene;
-var controller2;
-var controller;
-
-function initScrollMagic() {
-  controller2 = new ScrollMagic.Controller({
-    globalSceneOptions: {
-      triggerHook: "onLeave"
-    }
-  });
-
-  controller = new ScrollMagic.Controller({
-    globalSceneOptions: {
-      triggerHook: "onEnter"
-    }
-  });
-
-  var slides = document.querySelectorAll("section.layer");
-  for (var i = 0; i < slides.length; i++) {
-    scene = new ScrollMagic.Scene({
-      triggerElement: slides[i]
-    })
-      .setPin(slides[i])
-      // .addIndicators()
-      .addTo(controller2);
-  }
-
-  var unpinSlide = document.querySelectorAll("div.unpin");
-  var scene2 = new ScrollMagic.Scene({
-    triggerElement: unpinSlide[0]
-  })
-  // .addIndicators({
-//     colorStart: "rgba(255,255,255,0.5)",
-//     colorEnd: "rgba(255,255,255,0.5)", 
-//     colorTrigger : "rgba(255,255,255,1)",
-//     name: 'unpin'
-// })
-    .setClassToggle(".page-contacts, .page-promo ")
-    .on("enter", function (e) {
-      scene.destroy(true);
-    })
-    .addTo(controller);
-}
-
-function handleResize() {
-  var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-
-  if (windowWidth >= 1600) {
-    initScrollMagic();
-  } else {
-    if (controller) {
-      controller.destroy(true);
-    }
-    if (controller2) {
-      controller2.destroy(true);
-    }
-  }
-}
-
-// Инициализация при загрузке страницы
-document.addEventListener('DOMContentLoaded', function () {
-  handleResize();
-
-  // Обработчик события изменения размера окна
-  window.addEventListener('resize', function () {
-    handleResize();
-  });
-});
 
 // ховер логотипа
 document.addEventListener('DOMContentLoaded', function () {
@@ -376,3 +291,67 @@ document.addEventListener('DOMContentLoaded', function () {
 // карта--------------------
 
 
+
+//скролл
+
+function anim(el) {
+  console.log(scroll.start, scroll.fin);
+  if (scroll.direction > 0) {
+    if (scroll.step === 0)
+      scroll.step = (scroll.start - scroll.fin) / (scroll.delay / 10);
+    if (scroll.start > scroll.fin && scroll.start >= 0) {
+      setTimeout(function () {
+        scroll.start += -scroll.step;
+        el.style.webkitMaskImage =
+          'linear-gradient(#000 ' + scroll.start + '%, transparent ' + scroll.start + '%)';
+        anim(el);
+      }, 10);
+    } else if (scroll.start < 0) {
+      scroll.start = 0;
+    }
+  } else if (scroll.direction < 0) {
+    console.log(scroll.start, scroll.fin);
+    if (scroll.step === 0)
+      scroll.step = (scroll.fin - scroll.start) / (scroll.delay / 10);
+    if (scroll.start < scroll.fin && scroll.start <= 100) {
+      setTimeout(function () {
+        scroll.start += scroll.step;
+        console.log(scroll.start);
+        el.style.webkitMaskImage =
+          'linear-gradient(#000 ' + scroll.start + '%, transparent ' + scroll.start + '%)';
+        anim(el);
+      }, 10);
+    } else if (scroll.start > 100) {
+      scroll.start = 100;
+    }
+  }
+}
+let scroll = {
+  start: 100,
+  fin: 0,
+  step: 0,
+  delay: 250,
+  direction: 100
+};
+let desible = false;
+function handleWheel(event) {
+  if (window.innerWidth > 1600 && !desible) {
+    desible = true;
+    scroll.direction = 25 * Math.sign(event.deltaY);
+    scroll.fin = scroll.start - scroll.direction;
+    anim(document.querySelector('section.active'));
+    setTimeout(() => {
+      desible = false;
+    }, scroll.delay);
+  }
+}
+document.addEventListener('wheel', handleWheel);
+
+function handleResize() {
+  if (window.innerWidth <= 1600) {
+    // Reset the animation or take any necessary action
+    // For example, you might want to stop the animation
+    // and reset the scroll position
+  }
+}
+window.addEventListener('resize', handleResize);
