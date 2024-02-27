@@ -1,14 +1,3 @@
-/*$(".button--toContacts").click(function () { // ID откуда кливаем
-  $('html, body').animate({
-    scrollTop: $(".page-contacts").offset().top  // класс объекта к которому приезжаем
-  }, 700); // Скорость прокрутки
-});
-
-$(".button--toPromo").click(function () { // ID откуда кливаем
-  $('html, body').animate({
-    scrollTop: $(".page-promo").offset().top  // класс объекта к которому приезжаем
-  }, 700); // Скорость прокрутки
-});*/
 
 // закрепленная шапка
 document.addEventListener("DOMContentLoaded", function () {
@@ -21,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     header.parentNode.insertBefore(placeholder, header);
 
     function updateHeader() {
-      if (window.innerWidth < 1200) {
+      if (window.innerWidth < 1194) {
         if (window.scrollY > 0) {
           header.classList.add('fixed-header');
           placeholder.style.display = 'block';
@@ -93,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       const column = columns[columnIndex];
-      const patterns = column.map(patternClass => patternsGrid.querySelector(patternClass));
+      const patterns = column.map(patternClass => patternsGrid.querySelector(patternClass)); // Здесь исправлено
       const randomIndex = Math.floor(Math.random() * patterns.length);
 
       patterns.forEach((pattern, index) => {
@@ -117,7 +106,9 @@ document.addEventListener("DOMContentLoaded", function () {
     setInterval(toggleAnimation, 600);
 
     window.addEventListener('resize', function () {
-      toggleRandomPatternVisibility();
+      columns.forEach((column, index) => { // Здесь добавлено
+        toggleRandomPatternVisibility(index);
+      }); // Здесь добавлено
     });
   }
 
@@ -126,22 +117,18 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+
 // скрытие и показ блока с контактами в мобиле
 function showContacts() {
-  if (window.innerWidth < 1230) {
+  if (window.innerWidth < 1194) {
     document.getElementById('page-contacts').style.display = 'block';
     document.getElementById('page-promo').style.display = 'none';
-    document.getElementById('header--contacts').scrollIntoView();
-  } else if (window.innerWidth >= 1230 && window.innerWidth < 1600) {
+    document.getElementById('header--contacts').scrollIntoView({ behavior: 'smooth' }); // Добавляем плавную прокрутку
+  } else if (window.innerWidth >= 1194 && window.innerWidth < 1600) {
     document.getElementById('page-contacts').style.display = 'grid';
     document.getElementById('page-promo').style.display = 'grid';
+    document.getElementById('header--contacts').scrollIntoView({ behavior: 'smooth' }); // Добавляем плавную прокрутку
   }
-
-  // Скрыть блок #page-promo
-  // document.getElementById('page-promo').style.display = 'none';
-
-  // Прокрутить страницу к header--contacts
-  // document.getElementById('header--contacts').scrollIntoView();
 }
 
 function showPromo() {
@@ -149,19 +136,10 @@ function showPromo() {
   document.getElementById('page-contacts').style.display = 'none';
   // Показать блок #page-promo
   document.getElementById('page-promo').style.display = 'block';
-  // Прокрутить страницу к header--promo
-  document.getElementById('header--promo').scrollIntoView();
+  // Прокрутить страницу к header--promo с плавной прокруткой
+  document.getElementById('header--promo').scrollIntoView({ behavior: 'smooth' });
 }
 
-// var myPlacemark = new ymaps.Placemark([41.028397,28.971935], null,{
-// 	iconLayout: 'default#image',
-// 	iconImageHref: "../img/map-ico.svg",
-// 	iconImageSize: [47, 52],
-// 	iconImageOffset: [-15, -44]
-// });
-// myMap.geoObjects.add(myPlacemark);
-// анимация на планшете
-// ['patternsGridWeb1', 'patternsGridWeb2'];
 document.addEventListener("DOMContentLoaded", function () {
   const patternsGrids = ['patternsGridWeb1', 'patternsGridWeb2'];
 
@@ -288,32 +266,60 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
-// карта--------------------
 
 
+document.addEventListener('DOMContentLoaded', function() {
+  const buttonToContacts = document.querySelector('.button--toContacts');
 
-//скролл
+  if (buttonToContacts) {
+    buttonToContacts.addEventListener('click', function() {
+      simulateMultipleWheelScrolls(5); // Вызываем функцию для эмуляции прокрутки
+    });
+  }
+});
+
+function simulateMultipleWheelScrolls(steps) {
+  let step = 0;
+  const simulateScroll = () => {
+    if (step < steps) {
+      handleWheel(); // Вызываем обработчик прокрутки
+      step++;
+      setTimeout(simulateScroll, 250); // Вызываем следующую эмуляцию через 250 мс
+    }
+  };
+  simulateScroll();
+}
 
 function anim(el) {
   console.log(scroll.start, scroll.fin);
+  const preactive = document.querySelector('.preactive');
   if (scroll.direction > 0) {
     if (scroll.step === 0)
       scroll.step = (scroll.start - scroll.fin) / (scroll.delay / 10);
     if (scroll.start > scroll.fin && scroll.start >= 0) {
       setTimeout(function () {
         scroll.start += -scroll.step;
+        preactive.style.zIndex = 91
         el.style.webkitMaskImage =
           'linear-gradient(#000 ' + scroll.start + '%, transparent ' + scroll.start + '%)';
         anim(el);
       }, 10);
-    } else if (scroll.start < 0) {
-      scroll.start = 0;
+    } 
+    if (scroll.start<=0 && scroll.fin<=0) {
+      preactive.style.zIndex = 101
     }
-  } else if (scroll.direction < 0) {
+    else if (scroll.start < 0) {
+      scroll.start = 0;
+      
+    }
+  } 
+  
+  else if (scroll.direction < 0) {
     console.log(scroll.start, scroll.fin);
     if (scroll.step === 0)
       scroll.step = (scroll.fin - scroll.start) / (scroll.delay / 10);
     if (scroll.start < scroll.fin && scroll.start <= 100) {
+      preactive.style.zIndex = 91
       setTimeout(function () {
         scroll.start += scroll.step;
         console.log(scroll.start);
@@ -326,6 +332,7 @@ function anim(el) {
     }
   }
 }
+
 let scroll = {
   start: 100,
   fin: 0,
@@ -333,18 +340,21 @@ let scroll = {
   delay: 250,
   direction: 100
 };
-let desible = false;
+
+let disable = false;
+
 function handleWheel(event) {
-  if (window.innerWidth > 1600 && !desible) {
-    desible = true;
-    scroll.direction = 25 * Math.sign(event.deltaY);
+  if (window.innerWidth > 1600 && !disable) {
+    disable = true;
+    scroll.direction = 25 * Math.sign(event ? event.deltaY : 100); // Если передано событие, используем его, в противном случае прокрутка вверх
     scroll.fin = scroll.start - scroll.direction;
     anim(document.querySelector('section.active'));
     setTimeout(() => {
-      desible = false;
+      disable = false;
     }, scroll.delay);
   }
 }
+
 document.addEventListener('wheel', handleWheel);
 
 function handleResize() {
@@ -354,4 +364,5 @@ function handleResize() {
     // and reset the scroll position
   }
 }
+
 window.addEventListener('resize', handleResize);
