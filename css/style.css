@@ -444,7 +444,7 @@ font-family: "Nunito Sans", sans-serif;
   line-height: 123.333%;
 }
 .page-contacts .info__descr {
-  margin-top: clamp(11px, 5vw, 0.921vw);
+  margin-top: 11px;
   font-size: 15px;
   font-weight: 400;
   line-height: 153.333%;
@@ -1091,7 +1091,7 @@ font-family: "Nunito Sans", sans-serif;
     margin:0
   }
   .page-contacts .info {
-    margin-top: 0;
+    margin-top: 54.89px;
     width: 762px;
   }
   .page-contacts .info__title {
@@ -1099,11 +1099,14 @@ font-family: "Nunito Sans", sans-serif;
     line-height: 52px;
   }
   .page-contacts .info__descr {
+    margin-top: 18px;
     width: 715px;
     font-size: 20px;
     line-height: 28px;
   }
-
+  .page-contacts .footer {
+    margin-top: 44px;
+  }
   .page-contacts .footer div, .page-contacts .footer a {
     font-size: 16px;
     line-height: 22px;
@@ -1117,7 +1120,7 @@ font-family: "Nunito Sans", sans-serif;
     left: 32px;
   }
   .page-contacts .map {
-    margin-top: 0px;
+    margin-top: 21px;
     margin-left: -5.6179775281vh;
     width: 940px;
     height: 591px;
