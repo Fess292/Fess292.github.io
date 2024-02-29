@@ -508,7 +508,9 @@ font-family: "Nunito Sans", sans-serif;
     grid-template-rows: repeat(2, 14.5vw);
   }
 }
-@media screen and (min-width: 1194px) {
+/* @media screen and (min-width: 1194px) { */
+
+@media screen and (min-width: 1000px) {
   .container {
     max-width: 100%;
     width: 1194px;
@@ -833,6 +835,17 @@ font-family: "Nunito Sans", sans-serif;
   .page-contacts .map-ico .header__logo-ico .logo-svg.active {
     opacity: 1;
   }
+}
+@media screen and (min-width: 1000px) and (max-width: 1194px) {
+  .page-promo .footer .header__logo-ico {
+    display: none;
+  }
+  .page-promo .footer__adress {
+    width: 207px;
+  }
+  .page-contacts .map {
+    margin-left: -140px;
+}
 }
 @media screen and (min-width: 1600px) {
   .wrapper {
