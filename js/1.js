@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     header.parentNode.insertBefore(placeholder, header);
 
     function updateHeader() {
-      if (window.innerWidth < 1200) {
+      if (window.innerWidth < 1000) {
         if (window.scrollY > 0) {
           header.classList.add('fixed-header');
           placeholder.style.display = 'block';
@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
     setInitialVisibility();
 
     function toggleRandomPatternVisibility(columnIndex) {
-      if (window.innerWidth > 1230 || !patternsGrid) {
+      if (window.innerWidth > 1000 || !patternsGrid) {
         return;
       }
 
@@ -130,11 +130,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // скрытие и показ блока с контактами в мобиле
 function showContacts() {
-  if (window.innerWidth < 1194) {
+  if (window.innerWidth < 1000) {
     document.getElementById('page-contacts').style.display = 'block';
     document.getElementById('page-promo').style.display = 'none';
     document.getElementById('header--contacts').scrollIntoView();
-  } else if (window.innerWidth >= 1194 && window.innerWidth < 1600) {
+  } else if (window.innerWidth >= 1000 && window.innerWidth < 1600) {
     document.getElementById('page-contacts').style.display = 'grid';
     document.getElementById('page-promo').style.display = 'grid';
   } 
