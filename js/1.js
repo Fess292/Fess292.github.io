@@ -130,11 +130,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // скрытие и показ блока с контактами в мобиле
 function showContacts() {
-  if (window.innerWidth < 1230) {
+  if (window.innerWidth < 1194) {
     document.getElementById('page-contacts').style.display = 'block';
     document.getElementById('page-promo').style.display = 'none';
     document.getElementById('header--contacts').scrollIntoView();
-  } else if (window.innerWidth >= 1230 && window.innerWidth < 1600) {
+  } else if (window.innerWidth >= 1194 && window.innerWidth < 1600) {
     document.getElementById('page-contacts').style.display = 'grid';
     document.getElementById('page-promo').style.display = 'grid';
   } 
