@@ -516,7 +516,15 @@ font-family: "Nunito Sans", sans-serif;
     width: 1194px;
     padding: 0;
   }
-  
+  .page-promo .header svg, .page-contacts .header svg {
+    position: relative;
+    opacity: 1;
+    transition: opacity .3s;
+    cursor: pointer;
+  }
+  .page-promo .header svg:hover, .page-contacts .header svg:hover {
+    opacity: .8;
+  }
   .page-promo, .page-contacts {
     margin: 0;
     padding: 0;
@@ -1059,6 +1067,9 @@ font-family: "Nunito Sans", sans-serif;
   .page-promo .footer div, .page-promo .footer a {
     font-size: 15px;
   }
+  .footer a:hover {
+    text-decoration: underline;
+  }
   .page-promo .footer__adress {
     width: 280px;
   }
@@ -1147,7 +1158,7 @@ font-family: "Nunito Sans", sans-serif;
     left: 454px;
   }
   .page-contacts .map-ico {
-    top: 6px;
+    top: -12px;
   }
   .height {
     display: -webkit-box;
@@ -1170,6 +1181,11 @@ font-family: "Nunito Sans", sans-serif;
   }
   .bg-white {
     background-color: #ffffff;
+  }
+}
+@media screen and (min-width: 1770px) {
+  .patterns-web__grid {
+    justify-content: end;
   }
 }
 @media screen and (min-width: 1700px) {
