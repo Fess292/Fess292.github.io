@@ -173,7 +173,9 @@ document.addEventListener("DOMContentLoaded", function () {
       ['.line1-5', '.line2-5', '.line3-5', '.line4-5', '.line5-5', '.line6-5', '.line7-5', '.line8-5'],
       ['.line1-6', '.line2-6', '.line3-6', '.line4-6', '.line5-6', '.line6-6', '.line7-6', '.line8-6'],
       ['.line1-7', '.line2-7', '.line3-7', '.line4-7', '.line5-7', '.line6-7', '.line7-7', '.line8-7'],
-      ['.line1-8', '.line2-8', '.line3-8', '.line4-8', '.line5-8', '.line6-8', '.line7-8', '.line8-8']
+      ['.line1-8', '.line2-8', '.line3-8', '.line4-8', '.line5-8', '.line6-8', '.line7-8', '.line8-8'],
+      ['.line1-9', '.line2-9', '.line3-9', '.line4-9', '.line5-9', '.line6-7', '.line7-7', '.line8-7'],
+      ['.line1-10', '.line2-10', '.line3-10', '.line4-10', '.line5-10', '.line6-10', '.line7-10', '.line8-10']
     ];
 
     function setInitialVisibility() {

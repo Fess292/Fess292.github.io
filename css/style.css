@@ -875,7 +875,7 @@ font-family: "Nunito Sans", sans-serif;
   section.active{
     z-index: 100;
   }
-  .column-8 {
+  .column-8, .column-9, .column-10 {
     display: block;
   }
   .page-promo, .page-contacts {
@@ -924,7 +924,7 @@ font-family: "Nunito Sans", sans-serif;
     padding: 0;
   }
   .patterns-web__grid {
-    grid-template-columns: repeat(8, 11.2359550562vh);
+    grid-template-columns: repeat(10, 11.2359550562vh);
     grid-template-rows: repeat(8, 11.2359550562vh);
     gap: 1.1235955056vh;
   }
@@ -1183,11 +1183,11 @@ font-family: "Nunito Sans", sans-serif;
     background-color: #ffffff;
   }
 }
-@media screen and (device-aspect-ratio: 21/9) {
+/* @media screen and (device-aspect-ratio: 21/9) {
   .patterns-web__grid {
     justify-content: end;
   }
-}
+} */
 @media screen and (min-width: 1700px) {
   .page-contacts .footer__adress {
     width: 235px;
