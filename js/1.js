@@ -178,7 +178,11 @@ document.addEventListener("DOMContentLoaded", function () {
       ['.line1-10', '.line2-10', '.line3-10', '.line4-10', '.line5-10', '.line6-10', '.line7-10', '.line8-10'],
       ['.line1-11', '.line2-11', '.line3-11', '.line4-11', '.line5-11', '.line6-11', '.line7-11', '.line8-11'],
       ['.line1-12', '.line2-12', '.line3-12', '.line4-12', '.line5-12', '.line6-12', '.line7-12', '.line8-12'],
-      ['.line1-13', '.line2-13', '.line3-13', '.line4-13', '.line5-13', '.line6-13', '.line7-13', '.line8-13']
+      ['.line1-13', '.line2-13', '.line3-13', '.line4-13', '.line5-13', '.line6-13', '.line7-13', '.line8-13'],
+      ['.line1-14', '.line2-14', '.line3-14', '.line4-14', '.line5-14', '.line6-14', '.line7-14', '.line8-14'],
+      ['.line1-15', '.line2-15', '.line3-15', '.line4-15', '.line5-15', '.line6-15', '.line7-15', '.line8-15'],
+      ['.line1-16', '.line2-16', '.line3-16', '.line4-16', '.line5-16', '.line6-16', '.line7-16', '.line8-16'],
+      ['.line1-17', '.line2-17', '.line3-17', '.line4-17', '.line5-17', '.line6-17', '.line7-17', '.line8-17']
     ];
 
     function setInitialVisibility() {
